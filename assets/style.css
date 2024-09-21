@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#header{
+    background-color: #fff;
+    width: 100%;
+    height: 115px;
+}
+#header--element{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 0 0 0;
+}
+#header .header__icon{
+    padding: 0px 15px;
+}
+.header--logo img{
+    width: 395px;
+    height: 35px;
+    cursor: pointer;
+}
+#header .header__search{
+    margin-right: -160px;
+    padding-top: 2px;
+}
+#header .header__icon i,
+#header .header__search i{
+    padding: 10px 5px;
+    cursor: pointer;
+}
+#header .header__search input{
+    height: 44px;
+    border: 1px solid #ddd;
+    border-radius: 40px;
+}
+.header__acounts{
+
+}
+#navigation{
+
+}
+#navigation .nav{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+#navigation .nav .subnav li{
+    /* display: none; */
+    list-style-type: none;
+}
+#navigation .nav li:hover a{
+    display: inline-block;
+}
+#navigation .nav a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #767676;
+    text-transform: uppercase;
+}
+#navigation .nav i{
+    font-size: 13px;
+    padding: 5px;
+    cursor: pointer;
+}
+#slider{
+
+}
+#content{
+
+}
+#footer{
+
+}
