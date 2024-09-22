@@ -4,12 +4,14 @@
     box-sizing: border-box;
 }
 html{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: Helvetica Neue, Roboto, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
 }
+/* HEADER */
 #header{
-    background-color: #fff;
+    background-color: #cdcbcb;
     width: 100%;
     height: 115px;
+    /* position: relative; */
 }
 #header--element{
     display: flex;
@@ -41,8 +43,10 @@ html{
 .header__acounts{
 
 }
+/* NAVIGATION */
 #navigation{
-
+   
+    z-index: 1000;
 }
 #navigation .nav{
     display: flex;
@@ -50,12 +54,53 @@ html{
     justify-content: space-evenly;
     padding: 10px;
 }
+#navigation .nav li{
+    position: relative;
+    display: block;
+}
+.nav .list__item{
+    position: relative;
+}
+.nav .subnav__menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    padding: 20px;
+    opacity: 0;
+    transition: 0.5s ease-in;
+}
+.nav .list__item:hover .subnav__menu{
+    opacity: 1;
+    visibility: visible;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#navigation .nav .subnav{
+    display: inline-block;
+}
 #navigation .nav .subnav li{
-    /* display: none; */
+    display: none;
     list-style-type: none;
 }
-#navigation .nav li:hover a{
-    display: inline-block;
+#navigation .nav li ul.subnav{
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    background-color: #ccc;
+    z-index: 1000; 
+    list-style: none;
+    width: 200px;
+    line-height: 1.6;
+    display: block;
+}
+#navigation .nav li:hover li{
+    display: flex;
+    color: #000;
+    padding-left: 20px;
+    margin-top: 20px;
+    padding-bottom: 5px;
 }
 #navigation .nav a{
     text-decoration: none;
@@ -68,8 +113,16 @@ html{
     padding: 5px;
     cursor: pointer;
 }
+/* SILDER */
 #slider{
-
+    width: 100%;
+    height: 630px;
+    position: relative;
+}
+.slider--img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 #content{
 
