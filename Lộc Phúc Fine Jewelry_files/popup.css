@@ -1,0 +1,272 @@
+
+/*popup*/
+.dark-bg {
+	display: none;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 9999;
+	background:#6c757d9e;
+}
+.intro-bg {
+	top: 1%;
+	width:100%;
+	position: fixed;
+	/*display: none;*/
+	padding: 10px;
+	text-align: center;
+	z-index: 999999;
+	
+}
+#it-intro {
+	padding: 15px 20px;
+}
+#it-intro img {
+	width: 67%;
+}
+
+
+i.closePopUp {
+    position: absolute;
+    top: 10%;
+    /*right: 25%;*/
+    right: 49%;
+    font-size: 39px;
+    color: #b52f29;
+}
+@media (min-width: 768px) and (max-width: 1199.98px) {
+.intro-bg {
+	top: 5%;
+	/*width:100%;*/
+    width:83%;
+	position: fixed;
+	/*display: none;*/
+	text-align: center;
+	z-index: 999999;
+	
+}
+#it-intro {
+	padding: 5px;
+}
+#it-intro img {
+	width: 50%;
+}
+
+
+i.closePopUp {
+    position: absolute;
+    top: 5%;
+    /*right: 5%;*/
+    right: 25%;
+    font-size: 25px;
+    color: #b52f29;
+}
+}
+@media only screen and (max-width: 768px) {
+.intro-bg {
+	top: 5%;
+	/*width:100%;*/
+    width:96%;
+	position: fixed;
+	/*display: none;*/
+	text-align: center;
+	z-index: 999999;
+	
+}
+#it-intro {
+	padding: 5px;
+}
+#it-intro img {
+	width: 68%;
+}
+
+
+i.closePopUp {
+    position: absolute;
+    top: 5%;
+    /*right: 5%;*/
+    right: 20%;
+    font-size: 25px;
+    color: #b52f29;
+}
+}
+@media only screen and (max-width: 576px) {
+.intro-bg {
+	top: 10%;
+	/*width:100%;*/
+    width:96%;
+	position: fixed;
+	/*display: none;*/
+	text-align: center;
+	z-index: 999999;
+	
+}
+#it-intro {
+	padding: 5px;
+}
+#it-intro img {
+	width: 100%;
+}
+
+
+i.closePopUp {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 25px;
+    color: #b52f29;
+}
+}
+i.closePopUp:hover, p.extensionText a#extension:hover {
+	cursor: pointer;
+}
+
+@media (min-width: 1200px) and (max-width: 1299px) {
+    .intro-bg {
+        top: 5%;
+        /*width:100%;*/
+        width: 83%;
+        position: fixed;
+        /*display: none;*/
+        text-align: center;
+        z-index: 999999;
+    }
+
+    #it-intro {
+        padding: 5px;
+    }
+
+        #it-intro img {
+            width: 60%;
+        }
+
+
+    i.closePopUp {
+        position: absolute;
+        top: 5%;
+        /*right: 5%;*/
+        right: 25%;
+        font-size: 25px;
+        color: #b52f29;
+    }
+}
+
+@media (min-width: 1300px) and (max-width: 1350px) {
+    .intro-bg {
+        top: 5%;
+        /*width:100%;*/
+        width: 83%;
+        position: fixed;
+        /*display: none;*/
+        text-align: center;
+        z-index: 999999;
+    }
+
+    #it-intro {
+        padding: 5px;
+    }
+
+        #it-intro img {
+            width: 60%;
+        }
+
+
+    i.closePopUp {
+        position: absolute;
+        top: 5%;
+        /*right: 5%;*/
+        right: 28%;
+        font-size: 25px;
+        color: #b52f29;
+    }
+}
+@media (min-width: 1350px) and (max-width: 1400px) {
+    .intro-bg {
+        top: 5%;
+        /*width:100%;*/
+        width: 83%;
+        position: fixed;
+        /*display: none;*/
+        text-align: center;
+        z-index: 999999;
+    }
+
+    #it-intro {
+        padding: 5px;
+    }
+
+        #it-intro img {
+            width: 60%;
+        }
+
+
+    i.closePopUp {
+        position: absolute;
+        top: 5%;
+        /*right: 5%;*/
+        right: 30%;
+        font-size: 25px;
+        color: #b52f29;
+    }
+}
+@media (min-width: 1400px) and (max-width: 1450px) {
+    .intro-bg {
+        top: 5%;
+        /*width:100%;*/
+        width: 83%;
+        position: fixed;
+        /*display: none;*/
+        text-align: center;
+        z-index: 999999;
+    }
+
+    #it-intro {
+        padding: 5px;
+    }
+
+        #it-intro img {
+            width: 65%;
+        }
+
+
+    i.closePopUp {
+        position: absolute;
+        top: 5%;
+        /*right: 5%;*/
+        right: 33%;
+        font-size: 25px;
+        color: #b52f29;
+    }
+}
+
+@media (min-width: 1450px) and (max-width: 1500px) {
+    .intro-bg {
+        top: 5%;
+        /*width:100%;*/
+        width: 83%;
+        position: fixed;
+        /*display: none;*/
+        text-align: center;
+        z-index: 999999;
+    }
+
+    #it-intro {
+        padding: 5px;
+    }
+
+        #it-intro img {
+            width: 65%;
+        }
+
+
+    i.closePopUp {
+        position: absolute;
+        top: 5%;
+        /*right: 5%;*/
+        right: 33%;
+        font-size: 25px;
+        color: #b52f29;
+    }
+}

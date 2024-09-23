@@ -1,0 +1,211 @@
+﻿// see our "Pro JavaScript and jQuery Patterns" package for details
+//@model ChiTietSanPhamViewModel
+
+// ** namespace pattern
+// ** revealing module pattern
+// ** singleton pattern
+Patterns.namespace("Product").Product = (function () {
+
+    var utils = Patterns.Product.Utils;
+    var app = Patterns.Product.App;
+    var addToCart = function (event) {
+        // display success message
+        var $form = $(this).closest("form");
+        var count_quantity = $form.find("#count-quantity").val();
+        var jewelrygroup = $form.attr("data-JewelryGroup");
+        var groupRouting = $form.attr("data-GroupRouting");
+        var typeRouting = $form.attr("data-TypeRouting");
+        var sku = $form.attr("data-sku");
+        var content_name = $form.find(".product-name").text();
+        if (content_name == '') {
+            content_name = $form.attr("data-productname");
+        }
+        var productprice = $form.find(".price-box .price-regular").text().replace("vnđ", "").replace(" đ","").replace(/\,|\./g, "");
+        if (productprice == '')
+        {
+            productprice = $form.attr("data-productprice").replaceAll('.', '');
+        }
+        var productCatalogId = '';
+        switch (jewelrygroup) {
+            case "trang-suc-kim-cuong":
+                productCatalogId = "1180328748817115";
+                break;
+            case "trang-suc-cz":
+                productCatalogId = "2274894636107994";
+                break;
+
+            case "trang-suc-da-mau":
+                productCatalogId = "1412031008948113";
+                break;
+
+            case "trang-suc-ngoc-trai":
+                productCatalogId = "2293926507588577";
+                break;
+            
+            case "trang-suc-cuoi":
+                productCatalogId = "894172314294388";
+                break;
+            case "khong-gan-da":
+                productCatalogId = "1180328748817115";
+                break;
+            default:
+        }
+        //End track fb
+        var count_quantity = $(this).closest("form").find("#count-quantity").val();
+        if (count_quantity > 100) {
+            alert("Số lượng tối đa được phép mua là 100");
+            return false;
+        }
+        else if (count_quantity < 1) {
+            alert("Số lượng mua phải lớn hơn 0");
+            return false;
+        }
+
+        var count = parseInt(count_quantity);
+        var items = count > 1 ? " art works" : " art work";
+        $("#cart-alert").html("Added " + count + items + " to your cart.").fadeIn(500).delay(2500).fadeOut(2000);
+
+        // refreshes cart display at top       
+        var formData = JSON.parse(JSON.stringify(jQuery(this).serializeArray()));       
+        var productSize = $('select[class="nice-select"]').val() != null ? $('select[class="nice-select"]').val() : 0;
+        var options = {
+            url: urlDemo + "/luu-gio-hang",
+            type: "POST",
+            data: { count: count_quantity, id: formData[0].value, sku: formData[1].value, productSize: productSize, routing: formData[2].value }
+        };
+       
+        // ** fire and forget -- CQRS pattern
+        $.ajax(options).done(function () {
+            fbq('track', 'AddToCart', {
+                content_ids: sku,
+                content_name: content_name,
+                content_type: 'product',
+                currency: 'VND',
+                value: parseFloat(productprice),
+                product_group: jewelrygroup,
+                content_category: groupRouting + "/" + typeRouting,
+                product_catalog_id: productCatalogId,
+            });
+            if (formData.length == 4) { 
+                window.location.href = urlDemo + '/gio-hang';
+            } else location.reload();
+            
+           
+        });
+        event.preventDefault();
+        return utils.stopEvent(event);
+    }
+
+    var activateControls = function () {
+        $("body").on("submit", "form:not([id='account-register'], [id='account'])", addToCart)
+        //$("form").submit(addToCart);
+    };
+
+
+    window.onload = function () {
+        var link = window.location.href;
+        var array = link.split("/");
+        for (var i = 0; i < array.length; i++) {
+            if (array[i] == "lien-he") {
+                   $("body").off("submit", "form", addToCart);
+            }
+        }
+    }
+
+    var start = function () {
+        activateControls();
+    };
+    // the revealing part of revealing module pattern
+    return { start: start };
+})();
+
+
+$(function () {
+
+    //facade pattern
+    product = Patterns.Product.Product;
+    product.start();
+
+});
+
+//xu li cong tru mat hang
+$('.btn-number').click(function (e) {
+    e.preventDefault();
+
+    fieldName = $(this).attr('data-field');
+    type = $(this).attr('data-type');
+    var input = $("input[name='" + fieldName + "']");
+    var currentVal = parseInt(input.val());
+    if (!isNaN(currentVal)) {
+        if (type == 'minus') {
+
+            if (currentVal > input.attr('min')) {
+                input.val(currentVal - 1).change();
+                $('#count-quantity').val(currentVal - 1);
+            }
+            if (parseInt(input.val()) == input.attr('min')) {
+                $(this).attr('disabled', true);
+            }
+
+        } else if (type == 'plus') {
+
+            if (currentVal < input.attr('max')) {
+                input.val(currentVal + 1).change();
+                $('#count-quantity').val(currentVal + 1);
+            }
+            if (parseInt(input.val()) == input.attr('max')) {
+                $(this).attr('disabled', true);
+            }
+        }
+    } else {
+        input.val(0);
+    }
+});
+
+$('.input-number').focusin(function () {
+    $(this).data('oldValue', $(this).val());
+});
+$('.input-number').change(function () {
+
+    minValue = parseInt($(this).attr('min'));
+    maxValue = parseInt($(this).attr('max'));
+    valueCurrent = parseInt($(this).val());
+
+    name = $(this).attr('name');
+    if (valueCurrent >= minValue) {
+        $(".btn-number[data-type='minus'][data-field='" + name + "']").removeAttr('disabled')
+    } 
+    if (valueCurrent <= maxValue) {
+        $(".btn-number[data-type='plus'][data-field='" + name + "']").removeAttr('disabled')
+    }
+});
+$(".input-number").keydown(function (e) {
+    // Allow: backspace, delete, tab, escape, enter and .
+    if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 190]) !== -1 ||
+        // Allow: Ctrl+A
+        (e.keyCode == 65 && e.ctrlKey === true) ||
+        // Allow: home, end, left, right
+        (e.keyCode >= 35 && e.keyCode <= 39)) {
+        // let it happen, don't do anything
+        return;
+    }
+    // Ensure that it is a number and stop the keypress
+    if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+        e.preventDefault();
+    }
+});
+
+// Xử lý số lượng khi nhập
+$("#count-quantity").keypress(function (event) {
+    var count_quantity = parseInt($('#count-quantity').val());
+    if (event.keyCode == 13) {
+        if (count_quantity > 100) {
+            alert("Số lượng tối đa được phép mua là 100");
+            return false;
+        }
+        else if (count_quantity < 0) {
+            alert("Số lượng mua phải lớn hơn 0");
+            return false;
+        }
+    }
+});
