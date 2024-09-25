@@ -161,8 +161,7 @@ html{
     font-size: 24px;
     margin-bottom: 10px;
     margin-top: 40px;
-    text-transform: uppercase;
-    /* word-spacing: 3px; */
+    text-transform: uppercase;    /* word-spacing: 3px; */
     letter-spacing: 2px;
     font-weight: 300;
 }
@@ -178,7 +177,7 @@ html{
     justify-content: space-evenly;
     width: 100%;
 }
-.subcontent--listitem .subcontent__item1,.subcontent__item2,.subcontent__item3,.subcontent__item4,.subcontent__item5,.subcontent__item6,.subcontent__item7,.subcontent__item8{
+.subcontent--listitem .item__img{
     width: 25%; 
     margin-bottom: 10px;
     text-align: center;
@@ -198,6 +197,25 @@ html{
 }
 .banner{
     padding-top: 60px;
+}
+.nhan-cuoi{
+    display: flex;
+    padding-top: 40px;
+}
+.nhan-cuoi .sub-nhan-cuoi{
+    width: 50%;
+    margin-top: 8px;
+}
+.lady{
+    width: 100%;
+    margin-left: -160px;
+    padding-top: 40px;
+   display: flex;
+}
+.lady img{
+    width: 300px;
+    height: 490px;
+    padding-right: 5px;
 }
 #footer{
 
