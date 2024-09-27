@@ -8,7 +8,7 @@ html{
 }
 /* HEADER */
 #header{
-    background-color: #cdcbcb;
+    background-color: #fff;
     width: 100%;
     height: 115px;
     position: fixed;
@@ -88,7 +88,7 @@ html{
     position: absolute;
     top: 100%; 
     left: 0;
-    background-color: #ccc;
+    background-color: #fff;
     z-index: 1000; 
     list-style: none;
     width: 200px;
@@ -99,7 +99,7 @@ html{
     display: flex;
     justify-content: space-around;
     width: 1200px;
-    background-color: #ccc; 
+    background-color: #fff; 
     color: #767676;
     z-index: 9999;
 }  
@@ -294,15 +294,74 @@ html{
     align-items: center;
     justify-items: center;
 }
+/* FOOTER */
 #footer{
-    background-color: #ccc;
+    background-color: #fff;
     width: 100%;
     height: 370px;
     margin: 40px auto 0 auto; 
     padding: 20px;
     display: block;
 }
+.sub-footer{
+    display: flex;
+    justify-content: space-evenly;
+}
 .footer__addr p{
     font-size: 14px;
     opacity: 0.7;
+    margin: 2px 0 10px;
+    margin-bottom: 8px;
+    
+}
+.about-lp p{
+    font-size: 14px;
+    opacity: 0.7;
+    margin: 0 0 8px;
+    margin-bottom: 8px;
+}
+.add{
+    margin: -6px 0 23px;
+    font-size: 14px;
+    text-transform: uppercase;
+    opacity: 0.5;
+}
+.about-lp__m{
+    display: flex;
+}
+.about-lp__m p{
+    margin-bottom: 8px;
+    margin-right: 8px;
+}
+.connect i{
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    line-height: 40px;
+    margin-right: 10px;
+    color: #777777;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 1px solid #dedede;
+}
+.register{
+    display: flex;
+    align-self: center;
+    justify-content: flex-start;
+    margin-left: 120px;
+}
+.register input{
+    width: 570px;
+    border: none;
+    border-bottom: 2px solid #000;
+    outline: none;
+}
+#powered{
+    background-color: #ccc;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
