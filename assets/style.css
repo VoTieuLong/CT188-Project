@@ -13,6 +13,7 @@ html{
     height: 115px;
     position: fixed;
     top: 0;
+    z-index: 9999;
 }
 #header--element{
     display: flex;
@@ -202,6 +203,11 @@ html{
     justify-content: space-evenly;
     width: 100%;
 }
+/* .subcontent--listitem .subcontent__item2 img{
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+} */
 .subcontent--listitem .item__img{
     width: 25%; 
     margin-bottom: 10px;
@@ -213,8 +219,8 @@ html{
     opacity: 0;
     visibility: hidden; 
     max-height: 0;
+    /* margin-top: 20px; */
 }
-
 .bonus{
     border: 1px solid #ddd;
     border-radius: 40px;
@@ -238,16 +244,52 @@ html{
     width: 50%;
     margin-top: 8px;
 }
+/* HOVER ITEMS */
+.subcontent--listitem .item__img1:hover .item__img-1{
+    opacity: 0;
+    visibility: hidden;
+    max-height: 0;
+    /* -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s; */
+}
+.subcontent--listitem .item__img1:hover .item__img2{
+    opacity: 1;
+    visibility: visible;
+    max-height: 580px;
+}
+
+/* LADY */
 .lady{
     width: 100%;
-    margin-left: -320px;
+    margin-left: -300px;
    display: flex;
 }
 .lady img{
     width: 300px;
     height: 490px;
     padding-right: 5px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
 }
+.lady__1:hover img{
+    filter: grayscale(0);
+}
+.lady__2:hover img{
+    filter: grayscale(0);
+}
+.lady__3:hover img{
+    filter: grayscale(0);
+}
+.lady__4:hover img{
+    filter: grayscale(0);
+}
+.lady__5:hover img{
+    filter: grayscale(0);
+}
+/* CAC LOAI TRANG SUC */
 .ts-cao-cap{
     display: flex;
     justify-content: center;
@@ -293,6 +335,7 @@ html{
 .ts-cuoi .sub-ts-cuoi{
     width: 50%;
 }
+/* KHACH HANG */
 .user{
     background-color: #fff;
     width: 100%; 
@@ -358,11 +401,13 @@ html{
 }
 .about-lp__m{
     display: flex;
+    cursor: pointer;
 }
 .about-lp__m p{
     margin-bottom: 8px;
     margin-right: 8px;
 }
+/* CONNECT */
 .connect i{
     width: 40px;
     height: 40px;
@@ -374,7 +419,24 @@ html{
     background-color: #fff;
     border-radius: 50%;
     border: 1px solid #dedede;
+    cursor: pointer;
 }
+.connect .connect--icon{
+    display: flex;
+}
+.connect--icon .add__icon1:hover i{
+    color: #fff;
+    background-color: #000;
+}
+.connect--icon .add__icon2:hover i{
+    color: #fff;
+    background-color: #000;
+}
+.connect--icon .add__icon3:hover i{
+    color: #fff;
+    background-color: #000;
+}
+/* REGISTER */
 .register{
     display: flex;
     align-self: center;
