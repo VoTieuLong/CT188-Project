@@ -262,36 +262,12 @@ html{
     background-color: #fff;
     opacity: 1;
     visibility: visible;
-    -webkit-transform: scale(1);
+    /* -webkit-transform: scale(1);
     -ms-transform: scale(1);
-    transform: scale(1);
+    transform: scale(1); */
     visibility: visible;
     cursor: pointer;
 }
-/* .btn__cart{
-    position: absolute;
-    display: inline-block;
-    font-weight: 400;
-    color: #212529;
-    text-align: center;
-    vertical-align: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    background-color: transparent;
-    border: 1px solid transparent;
-    padding: .375rem .75rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    border-radius: .25rem;
-    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-    border: 1px solid #ddd;
-    border-radius: 40px;
-    opacity: 0;
-    visibility: hidden;
-    max-height: 0;
-} */
 /* INFOR */
 .item__id{
     font-size: 12px;
@@ -394,7 +370,6 @@ html{
 }
 .ts-kc{
     display: flex;
-    
 }
 .ts-kc .sub-ts-kc{
     display: flex;
@@ -405,35 +380,42 @@ html{
 .ts-cz{
     display: flex;
 }
-/* .ts-cz > img{
-    max-width: 50%;
-} */
 .ts-cz .sub-ts-cz{
     display: flex;
     flex-wrap: wrap;
-    width: 50%;   
-    /* margin-top: 8px; */
+    width: 50%;  
+    margin-top: 8px; 
+    margin-left: 5px;
 }
 .ts-da-mau{
     display: flex;
-    justify-content: space-evenly;
 }
 .ts-da-mau .sub-ts-da-mau{
-    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;  
+    margin-top: 8px; 
+    margin-left: 5px;
 }
 .ts-ngoc-trai{
     display: flex;
-    justify-content: space-evenly;
 }
 .ts-ngoc-trai .sub-ts-ngoc-trai{
-    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;  
+    margin-top: 8px; 
+    margin-left: 5px;
 }
 .ts-cuoi{
     display: flex;
-    justify-content: space-evenly;
 }
 .ts-cuoi .sub-ts-cuoi{
-    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;  
+    margin-top: 8px; 
+    margin-left: 5px;
 }
 /* KHACH HANG */
 .user{
