@@ -212,8 +212,8 @@ html{
 }
 .item__img1 {
     position: relative;
-    width: 285px;
-    height: 285px;
+    width: 290px;
+    height: 290px;
 }
 
 .item__img1 img {
@@ -225,6 +225,7 @@ html{
     object-fit: cover;
     transition: opacity 0.5s ease-in-out;
     cursor: pointer;
+    
 }
 .item__id, .item__name, .item__price {
     margin-top: 10px;
@@ -314,9 +315,9 @@ html{
     opacity: 0;
     visibility: hidden;
     max-height: 0;
-    /* -webkit-transition: 0.4s;
+    -webkit-transition: 0.4s;
     -o-transition: 0.4s;
-    transition: 0.4s; */
+    transition: 0.4s;
 }
 .item__img1:hover .item__img2{
     opacity: 1;
@@ -359,14 +360,14 @@ html{
     width: 580px;
     height: 573px;
 }
-.ts-cao-cap{
-    display: flex;
-    justify-content: center;
+.ts-cao-cao video{
+    width: 590px;
+    height: 590px;
 }
 .ts-cao-cap img{
     width: 590px;
-    height: 590px;
-    padding-left: 10px;
+    height: 585px;
+    margin-top: 5px;
 }
 .about-ts{
     display: inline-block;
@@ -376,6 +377,15 @@ html{
 }
 .ts-da-mau{
     display: flex;
+    margin: 0;
+}
+.sub-ts-da-mau .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.banner__ts img {
+    width: 100%;
+    height: 100%;
 }
 .sub-da-mau .item__img1{
     display: inline-block;
