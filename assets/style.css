@@ -15,7 +15,7 @@ html{
     top: 0;
     z-index: 9999;
 }
-#header--element{
+#header-element{
     display: flex;
     justify-content: space-evenly;
     padding: 10px 0 0 0;
@@ -23,7 +23,7 @@ html{
 #header .header__icon{
     padding: 0px 15px;
 }
-.header--logo img{
+.header-logo img{
     width: 395px;
     height: 35px;
     cursor: pointer;
@@ -46,6 +46,7 @@ html{
 
 }
 /* NAVIGATION */
+
 #navigation{
    position: relative;
 }
@@ -155,7 +156,7 @@ html{
     display: block;
     margin-top: 50px;
 }
-.slider--img img {
+.slider-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -197,13 +198,13 @@ html{
     font-style: italic;
     opacity: 0.7;
 }
-.subcontent--listitem{
+/* .subcontent-listitem{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     width: 100%;
-}
-.subcontent__item2{
+} */
+.subcontent__item{
     width: 290px;
     margin-bottom: 20px;
     text-align: center;
@@ -211,8 +212,8 @@ html{
 }
 .item__img1 {
     position: relative;
-    width: 290px;
-    height: 290px;
+    width: 285px;
+    height: 285px;
 }
 
 .item__img1 img {
@@ -230,7 +231,7 @@ html{
     z-index: 1;
     position: relative;
 }
-.subcontent--listitem .item__img{
+.subcontent-listitem .item__img{
     width: 25%; 
     margin-bottom: 10px;
     text-align: center;
@@ -255,16 +256,11 @@ html{
     font-size: 18px;
     line-height: 42px;
     color: #767676;
-    text-align: center;
     margin-top: 30px;
     border-radius: 50%;
     margin-bottom: 10px;
     background-color: #fff;
     opacity: 1;
-    visibility: visible;
-    /* -webkit-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1); */
     visibility: visible;
     cursor: pointer;
 }
@@ -291,7 +287,7 @@ html{
     font-size: 14px;
     padding: 5px 30px;
     margin-bottom: 40px;
-    text-transform: capitalize;
+    margin-left: 45%;
 }
 .bonus:hover{
     background-color: #000;
@@ -301,18 +297,17 @@ html{
 .banner{
     margin-top: 10px;
 }
-.nhan-cuoi{
-    display: flex;
-    padding-top: 40px;
-}
-.nhan-cuoi .sub-nhan-cuoi{
-    display: flex;
-    flex-wrap: wrap;
-    width: 50%;
-    margin-top: 8px;
-}
-.sub-nhan-cuoi img{
+.sub-nhan-cuoi .item__img1{
+    display: inline-block;
     padding: 2px;
+}
+.sub-nhan-cuoi{
+    width: 100%;
+}
+.nhan-cuoi-video video{
+    /* left: 0; */
+    width: 100%;
+    height: 570px;
 }
 /* HOVER ITEMS */
 .item__img1:hover .item__img-1{
@@ -359,6 +354,11 @@ html{
     filter: grayscale(0);
 }
 /* CAC LOAI TRANG SUC */
+
+.banner__ts img{
+    width: 580px;
+    height: 573px;
+}
 .ts-cao-cap{
     display: flex;
     justify-content: center;
@@ -368,54 +368,29 @@ html{
     height: 590px;
     padding-left: 10px;
 }
-.ts-kc{
-    display: flex;
+.about-ts{
+    display: inline-block;
 }
-.ts-kc .sub-ts-kc{
-    display: flex;
-    flex-wrap: wrap;
-    width: 50%;
-    margin-top: 8px;
-}
-.ts-cz{
-    display: flex;
-}
-.ts-cz .sub-ts-cz{
-    display: flex;
-    flex-wrap: wrap;
-    width: 50%;  
-    margin-top: 8px; 
-    margin-left: 5px;
+.about-ts .item__img1{
+    display: inline-flex;
 }
 .ts-da-mau{
     display: flex;
 }
-.ts-da-mau .sub-ts-da-mau{
-    display: flex;
-    flex-wrap: wrap;
-    width: 50%;  
-    margin-top: 8px; 
-    margin-left: 5px;
+.sub-da-mau .item__img1{
+    display: inline-block;
 }
 .ts-ngoc-trai{
     display: flex;
 }
-.ts-ngoc-trai .sub-ts-ngoc-trai{
-    display: flex;
-    flex-wrap: wrap;
-    width: 50%;  
-    margin-top: 8px; 
-    margin-left: 5px;
+.sub-ngoc-trai .item__img1{
+    display: inline-block;
 }
 .ts-cuoi{
     display: flex;
 }
-.ts-cuoi .sub-ts-cuoi{
-    display: flex;
-    flex-wrap: wrap;
-    width: 50%;  
-    margin-top: 8px; 
-    margin-left: 5px;
+.sub-cuoi .item__img1{
+    display: inline-block;
 }
 /* KHACH HANG */
 .user{
@@ -503,18 +478,18 @@ html{
     border: 1px solid #dedede;
     cursor: pointer;
 }
-.connect .connect--icon{
+.connect .connect-icon{
     display: flex;
 }
-.connect--icon .add__icon1:hover i{
+.connect-icon .add__icon1:hover i{
     color: #fff;
     background-color: #000;
 }
-.connect--icon .add__icon2:hover i{
+.connect-icon .add__icon2:hover i{
     color: #fff;
     background-color: #000;
 }
-.connect--icon .add__icon3:hover i{
+.connect-icon .add__icon3:hover i{
     color: #fff;
     background-color: #000;
 }
