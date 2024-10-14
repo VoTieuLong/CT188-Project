@@ -303,7 +303,8 @@ html{
     color: #fff;
     cursor: pointer;
 }
-.banner{
+.banner img{
+    width: 100%;
     margin-top: 10px;
 }
 .nhan-cuoi{
@@ -439,10 +440,16 @@ html{
 }
 .tin-tuc{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     justify-items: center;
     margin-top: 10px;
+
+}
+.tin-tuc img{
+    width: 375px;
+    height: 270px;
+    padding: 5px;
 }
 /* FOOTER */
 #footer{
