@@ -1,223 +1,231 @@
 /* MOBILE & TABLET */
-@media (max-width : 1023px){
-    .hide-on-mobile-tablet{
-        display: none;
-    }
+@media (max-width: 1023px) {
+  .hide-on-mobile-tablet {
+    display: none;
+  }
 }
 /* TABLET */
-@media (min-width: 740px) and (max-width: 1023px){
-    .hide-on-tablet{
-        display: none;
-    }
-    #header{
-        width: 100%;
-        height: 8%;
-    }
-    .header__icon{
-        display: none;
-    }
-    .header-logo{
-        width: 10%;
-        height: 10%;
-    }
-    .header-icon__bar{
-        opacity: 1;
-        visibility: visible;
-        font-size: 1.5rem;
-        display: flex;
-        align-items: center;
-        margin-left: -5rem;
-        margin-bottom: 12px;
-    }
-    .header__search .fa-magnifying-glass, .fa-user,input {
-        opacity: 0;
-        visibility: hidden;
-    }
-    .header__seacrh .fa-bag-shopping i{
-        opacity: 1;
-        visibility: visible;
-        display: flex;
-        align-items: end;
-        margin-right: 2rem;
-    }
-    #navigation{
-        display: none;
-    }
-    .subcontent__item .item__img1 img{
-        width: 80%
-    }
-    .subcontent__item .item__icon{
-        margin-right: 1rem;
-    }
-    .item__img1 img{
-        width: 99%;
-    }
-    .lady{
-        display: none;
-    }
-    .tin-tuc img{
-        width: 100%;
-    }
-    .tin-tuc .info2{
-        margin-top: 20px;
-    }
-    #footer{
-        display: block;
-    }
-    #powered{
-        display: block;
-    }
-    #powered{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 9rem;
-    }
+@media (min-width: 740px) and (max-width: 1023px) {
+  .hide-on-tablet {
+    display: none;
+  }
+  #header {
+    width: 100%;
+    height: 8%;
+  }
+  .header__icon {
+    display: none;
+  }
+  .header-logo {
+    width: 10%;
+    height: 10%;
+  }
+  .header-icon__bar {
+    opacity: 1;
+    visibility: visible;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    margin-left: -5rem;
+    margin-bottom: 12px;
+  }
+  .header__search .fa-magnifying-glass,
+  .fa-user,
+  input {
+    opacity: 0;
+    visibility: hidden;
+  }
+  .header__seacrh .fa-bag-shopping i {
+    opacity: 1;
+    visibility: visible;
+    display: flex;
+    align-items: end;
+    margin-right: 2rem;
+  }
+  #navigation {
+    display: none;
+  }
+  .subcontent__item .item__img1 img {
+    width: 80%;
+  }
+  .subcontent__item .item__icon {
+    margin-right: 1rem;
+  }
+  .item__img1 img {
+    width: 99%;
+  }
+  .lady {
+    display: none;
+  }
+  .tin-tuc img {
+    width: 100%;
+  }
+  .tin-tuc .info2 {
+    margin-top: 20px;
+  }
+  #footer {
+    display: block;
+  }
+  #powered {
+    display: block;
+  }
+  #powered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 9rem;
+  }
 }
 /* MOBILE */
-@media (max-width: 739px){
-    .hide-on-mobile{
-        display: none;
-    }
-    #header{
-        width: 100%;
-        height: 8%;
-    }
-    .header__icon{
-        display: none;
-    }
-    .header-logo{
-        width: 10%;
-        height: 50%;
-    }
-    .header-logo img{
-        width: 300%;
-        margin-left: 3rem;
-    }
-    .header-icon__bar{
-        opacity: 1;
-        visibility: visible;
-        font-size: 1.5rem;
-        display: flex;
-        align-items: center;
-        margin-left: -5rem;
-        margin-bottom: 12px;
-    }
-    .header__search .fa-magnifying-glass, .fa-user,input {
-        opacity: 0;
-        visibility: hidden;
-    }
-    .header__seacrh .fa-bag-shopping{
-        opacity: 1;
-        visibility: visible;
-        float: right;
-        margin-right: 2rem;
-    }
-    #navigation{
-        display: none;
-    }
-    .subcontent__item .item__img1 img{
-        width: 80%
-    }
-    .subcontent__item .item__icon{
-        margin-right: 1rem;
-    }
-    .lady{
-        display: none;
-    }
-    .tin-tuc img, .tin-tuc__date, .tin-tuc__content{
-        margin-left: 9rem;
-    }
-    .footer{
-        display: block;
-       
-    }
-    .sub-footer{
-        margin-left: 5rem;
-    }
-    .sub-footer .footer__logo{
-        margin-left: 5rem;
-    }
-    .sub-footer .about-lp{
-        margin-top: 2rem;
-    }
-    .sub-footer .connect{
-        margin-top: 2rem;
-    }
-    #powered{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 26rem;
-    }
-
+@media (max-width: 739px) {
+  .hide-on-mobile {
+    display: none;
+  }
+  #header {
+    width: 100%;
+    height: 8%;
+  }
+  .header__icon {
+    display: none;
+  }
+  .header-logo {
+    width: 10%;
+    height: 50%;
+  }
+  .header-logo img {
+    width: 300%;
+    margin-left: 3rem;
+  }
+  .header-icon__bar {
+    opacity: 1;
+    visibility: visible;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    margin-left: -5rem;
+    margin-bottom: 12px;
+  }
+  .header__search .fa-magnifying-glass,
+  .fa-user,
+  input {
+    opacity: 0;
+    visibility: hidden;
+  }
+  .header__seacrh .fa-bag-shopping {
+    opacity: 1;
+    visibility: visible;
+    float: right;
+    margin-right: 2rem;
+  }
+  #navigation {
+    display: none;
+  }
+  .subcontent__item .item__img1 img {
+    width: 80%;
+  }
+  .subcontent__item .item__icon {
+    margin-right: 1rem;
+  }
+  .lady {
+    display: none;
+  }
+  .tin-tuc img,
+  .tin-tuc__date,
+  .tin-tuc__content {
+    margin-left: 9rem;
+  }
+  .footer {
+    display: block;
+  }
+  .sub-footer {
+    margin-left: 5rem;
+  }
+  .sub-footer .footer__logo {
+    margin-left: 5rem;
+  }
+  .sub-footer .about-lp {
+    margin-top: 2rem;
+  }
+  .sub-footer .connect {
+    margin-top: 2rem;
+  }
+  #powered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 26rem;
+  }
 }
-@media (max-width:550px){
-    .subcontent__item .item__img1 img{
-        width: 60%
-    }
-    #header{
-        width: 100%;
-        height: 8%;
-    }
-    .header__icon{
-        display: none;
-    }
-    .header-logo{
-        width: 10%;
-        height: 50%;
-    }
-    .header-logo img{
-        width: 300%;
-        margin-left: 3rem;
-    }
-    .header-icon__bar{
-        opacity: 1;
-        visibility: visible;
-        font-size: 1.5rem;
-        display: flex;
-        align-items: center;
-        margin-left: -5rem;
-        margin-bottom: 12px;
-    }
-    .header__search .fa-magnifying-glass, .fa-user,input {
-        opacity: 0;
-        visibility: hidden;
-    }
-    .header__seacrh .fa-bag-shopping{
-        opacity: 1;
-        visibility: visible;
-        float: right;
-        margin-right: 2rem;
-    }
-    #navigation{
-        display: none;
-    }
-    .lady{
-        display: none;
-    }
-    .item__img1 img{
-        width: 99%;
-    }
-    .tin-tuc img, .tin-tuc__date, .tin-tuc__content{
-        margin-left: 4rem;
-    }
-    .footer{
-        display: block;
-    }
-    .sub-footer .footer__logo{
-        margin-left: 2rem;
-    }
-    .sub-footer .about-lp{
-        margin-top: 2rem;
-    }
-    .sub-footer .connect{
-        margin-top: 2rem;
-    }
-    #powered{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 27rem;
-    }
+@media (max-width: 550px) {
+  .subcontent__item .item__img1 img {
+    width: 60%;
+  }
+  #header {
+    width: 100%;
+    height: 8%;
+  }
+  .header__icon {
+    display: none;
+  }
+  .header-logo {
+    width: 10%;
+    height: 50%;
+  }
+  .header-logo img {
+    width: 300%;
+    margin-left: 3rem;
+  }
+  .header-icon__bar {
+    opacity: 1;
+    visibility: visible;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    margin-left: -5rem;
+    margin-bottom: 12px;
+  }
+  .header__search .fa-magnifying-glass,
+  .fa-user,
+  input {
+    opacity: 0;
+    visibility: hidden;
+  }
+  .header__seacrh .fa-bag-shopping {
+    opacity: 1;
+    visibility: visible;
+    float: right;
+    margin-right: 2rem;
+  }
+  #navigation {
+    display: none;
+  }
+  .lady {
+    display: none;
+  }
+  .item__img1 img {
+    width: 99%;
+  }
+  .tin-tuc img,
+  .tin-tuc__date,
+  .tin-tuc__content {
+    margin-left: 4rem;
+  }
+  .footer {
+    display: block;
+  }
+  .sub-footer .footer__logo {
+    margin-left: 2rem;
+  }
+  .sub-footer .about-lp {
+    margin-top: 2rem;
+  }
+  .sub-footer .connect {
+    margin-top: 2rem;
+  }
+  #powered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 27rem;
+  }
 }

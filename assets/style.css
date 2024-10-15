@@ -55,8 +55,6 @@ html {
   border: 1px solid #ddd;
   border-radius: 40px;
 }
-.header__acounts {
-}
 /* NAVIGATION */
 .header__search a {
   text-decoration: none;
