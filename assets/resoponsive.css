@@ -38,6 +38,7 @@
         visibility: visible;
         display: flex;
         align-items: end;
+        margin-right: 2rem;
     }
     #navigation{
         display: none;
@@ -65,6 +66,12 @@
     }
     #powered{
         display: block;
+    }
+    #powered{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 9rem;
     }
 }
 /* MOBILE */
@@ -104,6 +111,7 @@
         opacity: 1;
         visibility: visible;
         float: right;
+        margin-right: 2rem;
     }
     #navigation{
         display: none;
@@ -122,14 +130,71 @@
     }
     .footer{
         display: block;
+       
+    }
+    .sub-footer{
+        margin-left: 5rem;
+    }
+    .sub-footer .footer__logo{
+        margin-left: 5rem;
+    }
+    .sub-footer .about-lp{
+        margin-top: 2rem;
+    }
+    .sub-footer .connect{
+        margin-top: 2rem;
     }
     #powered{
-        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 26rem;
     }
+
 }
 @media (max-width:550px){
     .subcontent__item .item__img1 img{
         width: 60%
+    }
+    #header{
+        width: 100%;
+        height: 8%;
+    }
+    .header__icon{
+        display: none;
+    }
+    .header-logo{
+        width: 10%;
+        height: 50%;
+    }
+    .header-logo img{
+        width: 300%;
+        margin-left: 3rem;
+    }
+    .header-icon__bar{
+        opacity: 1;
+        visibility: visible;
+        font-size: 1.5rem;
+        display: flex;
+        align-items: center;
+        margin-left: -5rem;
+        margin-bottom: 12px;
+    }
+    .header__search .fa-magnifying-glass, .fa-user,input {
+        opacity: 0;
+        visibility: hidden;
+    }
+    .header__seacrh .fa-bag-shopping{
+        opacity: 1;
+        visibility: visible;
+        float: right;
+        margin-right: 2rem;
+    }
+    #navigation{
+        display: none;
+    }
+    .lady{
+        display: none;
     }
     .item__img1 img{
         width: 99%;
@@ -140,7 +205,19 @@
     .footer{
         display: block;
     }
+    .sub-footer .footer__logo{
+        margin-left: 2rem;
+    }
+    .sub-footer .about-lp{
+        margin-top: 2rem;
+    }
+    .sub-footer .connect{
+        margin-top: 2rem;
+    }
     #powered{
-        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 27rem;
     }
 }

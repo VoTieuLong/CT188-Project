@@ -533,8 +533,13 @@ html{
     border-bottom: 2px solid #000;
     outline: none;
 }
+.register__logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 #powered{
-    background-color: #fff;
+    background-color: #ddd;
     height: 50px;
     width: 100%;
     display: flex;
