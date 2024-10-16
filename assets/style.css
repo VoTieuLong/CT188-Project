@@ -12,6 +12,7 @@ html {
   background-color: #fff;
   width: 100%;
   height: 115px;
+  max-height: 165px;
   position: fixed;
   top: 0;
   z-index: 9999;
@@ -20,10 +21,17 @@ html {
 #header-element {
   display: flex;
   justify-content: space-evenly;
-  padding: 10px 0 0 0;
+  padding-top: 10px;
 }
-#header .header__icon {
-  padding: 0px 15px;
+#header-element,.nav{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: auto;
+}
+.header__icon{
+  margin-left: 10px;
 }
 .header-icon__bar {
   opacity: 0;
@@ -33,13 +41,17 @@ html {
   align-items: start;
   cursor: pointer;
 }
+.header-logo{
+  width: 20%;
+}
 .header-logo img {
-  width: 395px;
-  height: 35px;
+  vertical-align: middle;
+  border-style: none;
+  max-width: 100%;
   cursor: pointer;
 }
 #header .header__search {
-  margin-right: -160px;
+  margin-right: -120px;
   padding-top: 2px;
 }
 #header .header__search input {
@@ -55,13 +67,15 @@ html {
   border: 1px solid #ddd;
   border-radius: 40px;
 }
-/* NAVIGATION */
 .header__search a {
   text-decoration: none;
   color: inherit;
 }
+/* NAVIGATION */
 #navigation {
   position: relative;
+  margin: auto;
+  width: 80%;
 }
 #navigation .nav {
   display: flex;
@@ -80,20 +94,24 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  /* padding: 20px; */
 }
 .subnav__menu h6 li {
   text-align: center;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: normal;
 }
-
+.item-trang-chu{
+  position: relative;
+}
 #navigation .nav .list__item .subnav__menu {
+  position: absolute;
   opacity: 0;
   visibility: hidden;
   max-height: 0;
   overflow: hidden;
   transition: opacity 1s ease-in-out, max-height 1s ease-in-out;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 #navigation .nav .subnav {
   display: inline-block;
@@ -114,7 +132,7 @@ html {
 #navigation .nav .subnav li {
   display: none;
   list-style-type: none;
-  font-size: 16px;
+  font-size: 14px;
 }
 #navigation .nav li ul.subnav {
   position: absolute;
@@ -132,7 +150,7 @@ html {
   visibility: visible;
   max-height: 500px;
   justify-content: space-around;
-  width: 1200px;
+  width: 1024px;
   background-color: #fff;
   color: #767676;
   z-index: 9999;
@@ -151,8 +169,9 @@ html {
 }
 #navigation .nav a {
   text-decoration: none;
-  font-size: 16px;
+  font-size: 14px;
   color: #767676;
+
 }
 #navigation .nav i {
   font-size: 13px;
@@ -230,8 +249,9 @@ html {
 }
 .item__img1 {
   position: relative;
-  width: 290px;
-  height: 290px;
+  width: 99%;
+  max-width: 100%;
+  aspect-ratio: 1 / 1;
 }
 
 .item__img1 img {
@@ -302,6 +322,8 @@ html {
   font-weight: 600;
 }
 .bonus {
+  display: flex;
+  justify-content: center;
   border: 1px solid #ddd;
   border-radius: 40px;
   font-size: 14px;
@@ -317,6 +339,7 @@ html {
 .banner img {
   width: 100%;
   margin-top: 10px;
+  object-fit: cover;
 }
 .nhan-cuoi {
   display: flex;
@@ -330,7 +353,7 @@ html {
 .nhan-cuoi-video video {
   /* left: 0; */
   width: 100%;
-  height: 570px;
+  height: 25%px;
 }
 /* HOVER ITEMS */
 .item__img1:hover .item__img-1 {
@@ -384,11 +407,11 @@ html {
 }
 .ts-cao-cao video {
   width: 590px;
-  height: 590px;
+  height: 25%;
 }
 .ts-cao-cap img {
   width: 590px;
-  height: 585px;
+  height: 25%;
   margin-top: 5px;
 }
 .about-ts {
@@ -534,7 +557,7 @@ html {
   display: flex;
   align-self: center;
   justify-content: flex-start;
-  margin-left: 120px;
+  margin-left: 140px;
 }
 .register input {
   width: 570px;

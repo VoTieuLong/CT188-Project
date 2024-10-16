@@ -1,24 +1,27 @@
 /* MOBILE & TABLET */
-@media (max-width: 1023px) {
+@media only screen and (min-width: 1024px) {
   .hide-on-mobile-tablet {
     display: none;
   }
+  
 }
 /* TABLET */
-@media (min-width: 740px) and (max-width: 1023px) {
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
   .hide-on-tablet {
     display: none;
   }
-  #header {
+  #header{
     width: 100%;
+    max-width: 960px;
     height: 8%;
   }
   .header__icon {
     display: none;
   }
   .header-logo {
-    width: 10%;
+    width: 85%;
     height: 10%;
+    padding-left: 15rem;
   }
   .header-icon__bar {
     opacity: 1;
@@ -26,27 +29,32 @@
     font-size: 1.5rem;
     display: flex;
     align-items: center;
-    margin-left: -5rem;
+    margin-left: 3rem;
     margin-bottom: 12px;
   }
-  .header__search .fa-magnifying-glass,
-  .fa-user,
-  input {
-    opacity: 0;
-    visibility: hidden;
+  .header__search i:not(.fa-bag-shopping),
+  .header__search input {
+    display: none;
   }
-  .header__seacrh .fa-bag-shopping i {
-    opacity: 1;
-    visibility: visible;
-    display: flex;
-    align-items: end;
-    margin-right: 2rem;
+  .header__search {
+    text-align: center; 
+    width: 100%; 
+    overflow: hidden; 
+  }
+  .header__seacrh .fa-bag-shopping {
+    display: inline-block;
+    font-size: 1.5rem;
+    margin: 0 auto;
+    margin-right: -3rem;
   }
   #navigation {
     display: none;
   }
-  .subcontent__item .item__img1 img {
-    width: 80%;
+  .item__img1 {
+    position: relative;
+    width: 100%;
+    max-width: 150%;
+    aspect-ratio: 1 / 1;
   }
   .subcontent__item .item__icon {
     margin-right: 1rem;
@@ -77,24 +85,29 @@
   }
 }
 /* MOBILE */
-@media (max-width: 739px) {
+@media only screen and (max-width: 739px) {
   .hide-on-mobile {
     display: none;
   }
-  #header {
+  #header{
     width: 100%;
+    max-width: 720px;
     height: 8%;
+  }
+  #header-element{
+    display: flex;
+    align-items: center;
   }
   .header__icon {
     display: none;
   }
   .header-logo {
-    width: 10%;
+    width: 80%;
     height: 50%;
   }
   .header-logo img {
-    width: 300%;
-    margin-left: 3rem;
+    width: 50%;
+    margin-left: 12rem;
   }
   .header-icon__bar {
     opacity: 1;
@@ -102,26 +115,34 @@
     font-size: 1.5rem;
     display: flex;
     align-items: center;
-    margin-left: -5rem;
     margin-bottom: 12px;
+    margin-left: 1rem;
   }
-  .header__search .fa-magnifying-glass,
-  .fa-user,
-  input {
-    opacity: 0;
-    visibility: hidden;
+  .header__search i:not(.fa-bag-shopping),
+  .header__search input {
+    display: none;
+  }
+  .header__search {
+    text-align: center; 
+    width: 100%; 
+    overflow: hidden; 
   }
   .header__seacrh .fa-bag-shopping {
-    opacity: 1;
-    visibility: visible;
-    float: right;
-    margin-right: 2rem;
+    display: inline-block;
+    font-size: 1.5rem;
+    margin: 0 auto;
   }
   #navigation {
     display: none;
   }
   .subcontent__item .item__img1 img {
-    width: 80%;
+    width: 100%;
+  }
+  .item__img1 {
+    position: relative;
+    width: 100%;
+    max-width: 150%;
+    aspect-ratio: 1 / 1;
   }
   .subcontent__item .item__icon {
     margin-right: 1rem;
@@ -155,25 +176,27 @@
     align-items: center;
     margin-top: 26rem;
   }
+  
 }
-@media (max-width: 550px) {
+@media only screen and (max-width: 550px) {
   .subcontent__item .item__img1 img {
-    width: 60%;
-  }
-  #header {
     width: 100%;
+  }
+  #header{
+    width: 100%;
+    max-width: 540px;
     height: 8%;
   }
   .header__icon {
     display: none;
   }
   .header-logo {
-    width: 10%;
+    width: 50%;
     height: 50%;
   }
   .header-logo img {
     width: 300%;
-    margin-left: 3rem;
+    margin-left: 7rem;
   }
   .header-icon__bar {
     opacity: 1;
@@ -181,20 +204,22 @@
     font-size: 1.5rem;
     display: flex;
     align-items: center;
-    margin-left: -5rem;
+    margin-left: 2rem;
     margin-bottom: 12px;
   }
-  .header__search .fa-magnifying-glass,
-  .fa-user,
-  input {
-    opacity: 0;
-    visibility: hidden;
+  .header__search i:not(.fa-bag-shopping),
+  .header__search input {
+    display: none;
+  }
+  .header__search {
+    text-align: center; 
+    width: 100%; 
+    overflow: hidden; 
   }
   .header__seacrh .fa-bag-shopping {
-    opacity: 1;
-    visibility: visible;
-    float: right;
-    margin-right: 2rem;
+    display: inline-block;
+    font-size: 1.5rem;
+    margin: 0 auto;
   }
   #navigation {
     display: none;
@@ -202,8 +227,11 @@
   .lady {
     display: none;
   }
-  .item__img1 img {
+  .item__img1 {
+    position: relative;
     width: 99%;
+    max-width: 100%;
+    aspect-ratio: 1 / 1;
   }
   .tin-tuc img,
   .tin-tuc__date,
@@ -227,5 +255,8 @@
     justify-content: center;
     align-items: center;
     margin-top: 27rem;
+  }
+  .bonus{
+    margin-left: 30%;
   }
 }
