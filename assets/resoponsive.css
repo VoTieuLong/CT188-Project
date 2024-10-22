@@ -220,7 +220,7 @@
     display: block;
   }
   .sub-footer {
-    margin-left: 5rem;
+    margin-left: 1rem;
   }
   .sub-footer .footer__logo {
     margin-left: 5rem;
@@ -301,6 +301,9 @@
     width: 99%;
     max-width: 100%;
     aspect-ratio: 1 / 1;
+  }
+  .tin-tuc img{
+    width: 70%;
   }
   .tin-tuc img,
   .tin-tuc__date,
