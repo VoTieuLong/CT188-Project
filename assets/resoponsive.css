@@ -183,6 +183,13 @@
     font-size: 1.5rem;
     margin: 0 auto;
   }
+  #header .header__icon i,
+#header .header__search i {
+  margin-left: 20rem;
+}
+#header .totalQuantity{
+  width: 9%;
+}
   #navigation {
     display: none;
   }
@@ -272,6 +279,13 @@
     display: inline-block;
     font-size: 1.5rem;
     margin: 0 auto;
+  }
+  #header .header__icon i,
+  #header .header__search i {
+    margin-left: 10rem;
+  }
+  #header .totalQuantity{
+    width: 9%;
   }
   #navigation {
     display: none;
