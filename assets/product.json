@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Nhẫn CZ",
+    "price": 6290000,
+    "image": "./images/bo-suu-tap/key-of-love/nhan-1.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Nhẫn CZ",
+    "price": 8200000,
+    "image": "./images/bo-suu-tap/key-of-love/nhan-2.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Nhẫn CZ",
+    "price": 9350000,
+    "image": "./images/bo-suu-tap/key-of-love/nhan-3.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Nhẫn Cầu Hôn",
+    "price": 7640000,
+    "image": "./images/bo-suu-tap/key-of-love/nhan-4.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Bông Tai CZ",
+    "price": 18180000,
+    "image": "./images/bo-suu-tap/key-of-love/bong-tai-1.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Bông Tai CZ",
+    "price": 7230000,
+    "image": "./images/bo-suu-tap/key-of-love/bong-tai-2.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Bông Tai CZ",
+    "price": 5060000,
+    "image": "./images/bo-suu-tap/key-of-love/bong-tai-3.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Bông Tai CZ",
+    "price": 5650000,
+    "image": "./images/bo-suu-tap/key-of-love/bong-tai-4.jpg"
+  }
+]
