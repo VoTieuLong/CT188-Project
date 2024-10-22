@@ -1,0 +1,50 @@
+[
+    {
+        "id": "VRF1048ARW.WG06A",
+        "name": "Nhẫn CZ",
+        "price": "6,290,000 vnđ",
+        "image":"./images/bo-suu-tap/key-of-love/nhan-1.jpg"
+    },
+    {
+        "id": "VRF0837ARW.WG06A",
+        "name": "Nhẫn CZ",
+        "price": "8,200,000 vnđ",
+        "image":"./images/bo-suu-tap/key-of-love/nhan-2.jpg"
+    },
+    {
+        "id": "VRF0919ARW.WG06A",
+        "name": "Nhẫn CZ",
+        "price": "9,350,000 vnđ",
+        "image":"./images/bo-suu-tap/key-of-love/nhan-3.jpg"
+    },
+    {
+        "id": "VSR1164ARW.WG06A",
+        "name": "Nhẫn Cầu Hôn",
+        "price": "7,640,000 vnđ",
+        "image":"./images/bo-suu-tap/key-of-love/nhan-4.jpg"
+    },
+    {
+        "id": "VEA1290AEW.WG06A",
+        "name": "Bông Tai CZ",
+        "price": "18,180,000 vnđ",
+        "image":"./images/bo-suu-tap/key-of-love/bong-tai-1.jpg"
+    },
+    {
+        "id": "VEA1646AEW.WG06A",
+        "name": "Bông Tai CZ",
+        "price": "7,230,000 vnđ",
+        "image":"./images/bo-suu-tap/key-of-love/bong-tai-2.jpg"
+    },
+    {
+        "id": "VEA1357AEW.WG06A",
+        "name": "Bông Tai CZ",
+        "price": "5,060,000 vnđ",
+        "image":"./images/bo-suu-tap/key-of-love/bong-tai-3.jpg"
+    },
+    {
+        "id": "VEA1753AEW.WG06A",
+        "name": "Bông Tai CZ",
+        "price": "5,650,000 vnđ",
+        "image":"./images/bo-suu-tap/key-of-love/bong-tai-4.jpg"
+    }
+]

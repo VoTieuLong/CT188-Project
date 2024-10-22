@@ -19,9 +19,33 @@
     display: none;
   }
   .header-logo {
-    width: 85%;
+    position: absolute;
+    display: block;
+    width: 30%;
     height: 10%;
-    padding-left: 15rem;
+    padding-bottom: 2rem;
+  }
+  .header-bar{
+    width: 100%;
+    position: relative;
+    background-color: #fff;
+  }
+  .header__nav{
+    position: absolute;
+    font-size: 16px;
+    color: #767676;
+    padding-left: 15px;
+  }
+  .header-bar:hover .header-icon__bar{
+    display: none;
+  }
+  .header-bar:hover .header__nav{
+    display: block;
+    width:100%;
+    background-color: #fff;
+  }
+  .header__nav-search{
+    margin-bottom: 50px;
   }
   .header-icon__bar {
     opacity: 1;
@@ -29,8 +53,8 @@
     font-size: 1.5rem;
     display: flex;
     align-items: center;
-    margin-left: 3rem;
-    margin-bottom: 12px;
+    padding-left: 3rem;
+    padding-bottom: 5px;
   }
   .header__search i:not(.fa-bag-shopping),
   .header__search input {
@@ -39,6 +63,7 @@
   .header__search {
     text-align: center; 
     width: 100%; 
+    padding-left: 25rem;
     overflow: hidden; 
   }
   .header__seacrh .fa-bag-shopping {
@@ -49,6 +74,9 @@
   }
   #navigation {
     display: none;
+  }
+  #content{
+    width: 80%;
   }
   .item__img1 {
     position: relative;
@@ -68,6 +96,9 @@
   .tin-tuc img {
     width: 100%;
   }
+  /* .tin-tuc .info1{
+    margin-right: 3rem;
+  } */
   .tin-tuc .info2 {
     margin-top: 20px;
   }
@@ -102,19 +133,38 @@
     display: none;
   }
   .header-logo {
-    width: 80%;
+    position: absolute;
+    display: block;
+    width: 30%;
     height: 50%;
   }
-  .header-logo img {
-    width: 50%;
-    margin-left: 12rem;
+  .header-bar{
+    width: 60%;
+    position: relative;
+    background-color: #fff;
   }
+  .header__nav{
+    position: absolute;
+    font-size: 16px;
+    color: #767676;
+    padding-left: 15px;
+  }
+  .header-bar:hover .header-icon__bar{
+    display: none;
+  }
+  .header-bar:hover .header__nav{
+    display: block;
+    width:100%;
+    background-color: #fff;
+  }
+  
   .header-icon__bar {
     opacity: 1;
     visibility: visible;
     font-size: 1.5rem;
     display: flex;
     align-items: center;
+    margin-top: 5px;
     margin-bottom: 12px;
     margin-left: 1rem;
   }
@@ -126,6 +176,7 @@
     text-align: center; 
     width: 100%; 
     overflow: hidden; 
+    margin-right: -120px;
   }
   .header__seacrh .fa-bag-shopping {
     display: inline-block;
@@ -134,6 +185,9 @@
   }
   #navigation {
     display: none;
+  }
+  #content{
+    width: 100%;
   }
   .subcontent__item .item__img1 img {
     width: 100%;
@@ -191,12 +245,9 @@
     display: none;
   }
   .header-logo {
-    width: 50%;
+    display: block;
+    width: 30%;
     height: 50%;
-  }
-  .header-logo img {
-    width: 300%;
-    margin-left: 7rem;
   }
   .header-icon__bar {
     opacity: 1;
@@ -215,6 +266,7 @@
     text-align: center; 
     width: 100%; 
     overflow: hidden; 
+    margin-right: -120px;
   }
   .header__seacrh .fa-bag-shopping {
     display: inline-block;
@@ -223,6 +275,9 @@
   }
   #navigation {
     display: none;
+  }
+  #content{
+    width: 100%;
   }
   .lady {
     display: none;
