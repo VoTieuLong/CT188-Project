@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/assets/fontawesome-free-6.6.0-web/css/all.min.css">
+        <title>ĐĂNG KÝ</title>
+        <link rel="stylesheet" href="../css/dangky.css">
+        <link rel="stylesheet" href="../css/responsive.css">
+    </head>
+    <body class="page">
+        <header class="page-header">
+        </header>
+        <main  class="page-container"> 
+                <form   id="registerForm"class="sign-up" action="#"> 
+                    <div class="login__box" > 
+                        <h1 class="login__box-title">ĐĂNG KÝ</h1> 
+                        
+                        <div class="form-group">
+                            <label for="fullname" class="login__box-info">Tên đăng ký </label> 
+                            <input onkeyup="this.value=this.value.toUpperCase()" name="fullname"id="userName"class="login-text" type="text"   placeholder="VD: NGUYEN VAN A" >  
+                            <span id="userNameError" class="form-message">Tên đăng ký không được để trống</span>
+                        </div>  
+                        <div class="form-group">
+                            <label for="email" class="login__box-info">Email </label>
+                            <input onkeyup="this.value=this.value.toLowerCase()" id="email" class="login-text" type="text" name="email"  placeholder="VD: nguyenvana@gmail.com">
+                            <span id="emailError" class="form-message">Email không được để trống</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone" class="login__box-info">Số điện thoại </label>
+                            <input id="numberphone" type="tel" class="login-text"  name="phonenumber"  placeholder="Số điện thoại...">
+                            <span id="numberphoneError" class="form-message">Số điện thoại không được để trống</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="password" class="login__box-info login__box-psw">Mật khẩu</label>
+                            <input  id="psw1" class="login-text psw-text" type="password" name="psw"  placeholder="Mật khẩu..."pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Mật khẩu đúng định dạng"  required> 
+                            <img id="view-eye1" class=" eye-password" onclick="pswVisibility('psw1','view-eye1')" src="../images/view.png" alt="">
+
+                        </input>
+
+                           
+                            <div id="psw-message" >
+                                <p id="eightChar" class="invalid">Mật khẩu chứa ít nhất 8 kí tự</p>
+                                <p id="lowerCase" class="invalid">Mật khẩu chứa ít nhất 1 chữ viết thường</p>
+                                <p id="upperCase" class="invalid">Mật khẩu chứa ít nhất 1 chữ viết hoa</p>
+                                <p id="aNumber" class="invalid">Mật khẩu chứa ít nhất 1 số</p>
+                                <p id="specialChar" class="invalid">Mật khẩu chứa ít nhất 1 kí tự đặc biệt</p>
+                            </div>
+
+                            <span id="pswError" class="form-message">Mật khẩu không được để trống</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="password" class="login__box-info login__box-psw">Nhập lại mật khẩu</label> 
+                            <input id="repsw" class="login-text psw-text" type="password" name="psw1" placeholder="Nhập lại mật khẩu...">
+                            </input> <!--flex item I.2.5-->     
+                            <img id="view-eye2" class=" eye-password" onclick="pswVisibility('repsw','view-eye2')" src="../images/view.png" alt="">
+
+                            <span id="repswError"class="form-message">Mật khẩu không được để trống</span>
+                        </div>
+
+                        <br>
+
+                        <div class="login__note ">
+                            <input class="login__note-checkbox "type="checkbox" name="remember">
+                            <p class="login__note-text  ">Nhớ mật khẩu</p>
+                           
+                        </div>
+                        
+                        <br>
+                        
+                      
+                        <button class="login__box-btn" type="submit" value="Đăng ký">Đăng ký </button>
+                      
+                        <p class="login__box-sign-in"> <a href="dangnhap.html" class="signin-link">Đã có tài khoản?</a></p> 
+                        
+                        <p class="login__box-or">Hoặc đăng ký bằng</p> 
+                        <div class="login__note"> 
+                            <a class="login__box-google" href=""> 
+                                <i class="fa-brands fa-google"></i> Tài khoản Google
+                            </a>
+                            <a class="login__box-facebook" href=""> 
+                                <i class="fa-brands fa-facebook"></i>   Tài khoản Facebook
+                            </a>
+                        </div>
+                        
+                    </div>
+                </form>
+               
+                <img class="login__image" src="../images/banner/illustrate4.jpg" alt="" > 
+        </main>
+        <footer class="page-footer">
+            
+        </footer>
+        <script src="../js/dangky.js">
+        </script>
+        
+    </body>
+</html>

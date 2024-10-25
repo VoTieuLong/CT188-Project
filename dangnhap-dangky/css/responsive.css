@@ -1,0 +1,28 @@
+/* PC <=1024px */
+/* @media (min-width: 1024px){ */
+ 
+/* } */
+/* TABLET >=740px & <1024px */
+/* @media (min-width: 740px) and (max-width: 1023px){
+
+} */
+/* MOBILE <740*/
+@media (max-width: 740px){
+    .swap__image{
+        display:none;
+    }
+    .login{
+        margin-right:20px;
+    }
+    .page-container{
+        font-size: 15px;
+        width:100%;
+    }
+    .login__image{
+        display:none;
+    }
+    .sign-up{
+        margin-right: 20px;
+    }
+    
+}
