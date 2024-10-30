@@ -47,6 +47,7 @@ button {
 }
 .header__nav {
   display: none;
+  z-index: 1000;
 }
 .header__nav-search input {
   width: 90%;
