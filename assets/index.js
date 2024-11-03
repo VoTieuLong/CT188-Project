@@ -38,3 +38,40 @@ function nextSlide(){
 }
 
 // TIN TỨC
+const newsSlides = document.querySelectorAll('.tin-tuc .infor');
+let newsSlideIndex = 0;
+let newsIntervalId = null;
+
+document.addEventListener("DOMContentLoaded", initializeNewsSlider);
+
+function initializeNewsSlider() {
+    if (newsSlides.length > 0) {
+        newsSlides[newsSlideIndex].classList.add("active");
+        newsIntervalId = setInterval(nextNewsSlide, 5000);
+    }
+}
+
+function showNewsSlide(index) {
+    if (index >= newsSlides.length) {
+        newsSlideIndex = 0;
+    } else if (index < 0) {
+        newsSlideIndex = newsSlides.length - 1;
+    }
+
+    newsSlides.forEach((slide) => {
+        slide.classList.remove("active");
+    });
+    newsSlides[newsSlideIndex].classList.add("active");
+}
+
+function prevNewsSlide() {
+    clearInterval(newsIntervalId);
+    newsSlideIndex--;
+    showNewsSlide(newsSlideIndex);
+}
+
+function nextNewsSlide() {
+    newsSlideIndex++;
+    showNewsSlide(newsSlideIndex);
+}
+

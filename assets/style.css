@@ -421,7 +421,6 @@ img.displaySlide{
   display: flex;
   justify-content: center;
   align-items: center;
-
   margin-top: 2px;
 }
 /* MAIN CONTENT */
@@ -686,6 +685,8 @@ img.displaySlide{
   padding-top: 30px;
 }
 .tin-tuc {
+  position: relative;
+  overflow: hidden;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -693,10 +694,31 @@ img.displaySlide{
   margin-top: 10px;
   width: 100%;
 }
+.infor{
+  width: 100%;
+  display: none;
+  /* flex: 0 0 33.33333%; */
+}
+.infor.active{
+  display: block;
+}
 .tin-tuc img {
   width: 100%;
   height: 270px;
 }
+.tin-tuc button{
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%);
+  font-size: 2rem;
+  padding: 10px 15px;
+  margin-left: 45px;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
 /* FOOTER */
 #footer {
   background-color: #fff;
