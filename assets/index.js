@@ -1,3 +1,8 @@
+// SHOW BAR
+function toggleNav() {
+    const nav = document.getElementById("headerNav");
+    nav.classList.toggle("show");
+}
 // SLIDEDR
 const slides = document.querySelectorAll(".slides img");
 let slideIndex = 0;

@@ -47,7 +47,11 @@ button {
 }
 .header__nav {
   display: none;
+  transition: all 0.3s ease;
   z-index: 1000;
+}
+.header__nav.show {
+  display: block;
 }
 .header__nav-search input {
   width: 90%;
@@ -59,6 +63,7 @@ button {
   padding-right: 10px;
   list-style-type: none;
   line-height: 2.3;
+  cursor: pointer;
 }
 .header__nav-listItem {
   margin-bottom: 70px;
@@ -67,6 +72,11 @@ button {
   line-height: 1.8;
   margin-bottom: 40px;
   padding-left: 10px;
+  cursor: pointer;
+}
+.header__about-lp a{
+  text-decoration: none;
+  color: #767676;
 }
 .header__icon2 i {
   cursor: pointer;
@@ -737,6 +747,10 @@ img.displaySlide{
 .sub-footer {
   display: flex;
   justify-content: space-evenly;
+}
+.footer__logo img{
+  width: 240px;
+  height: 190px;
 }
 .footer__addr p {
   font-size: 14px;

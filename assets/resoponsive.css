@@ -35,13 +35,7 @@
     font-size: 16px;
     color: #767676;
     padding-left: 15px;
-  }
-  .header-bar:hover .header-icon__bar{
-    display: none;
-  }
-  .header-bar:hover .header__nav{
-    display: block;
-    width:100%;
+    z-index: 1000;
     background-color: #fff;
   }
   .header__nav-search{
@@ -96,6 +90,9 @@
   .tin-tuc img {
     width: 100%;
   }
+  .tin-tuc button{
+    font-size: 1.5rem;
+  }
   #footer {
     display: block;
   }
@@ -143,15 +140,6 @@
     color: #767676;
     padding-left: 15px;
   }
-  .header-bar:hover .header-icon__bar{
-    display: none;
-  }
-  .header-bar:hover .header__nav{
-    display: block;
-    width:100%;
-    background-color: #fff;
-  }
-  
   .header-icon__bar {
     opacity: 1;
     visibility: visible;
@@ -209,6 +197,9 @@
   .tin-tuc__date,
   .tin-tuc__content {
     margin-left: 9rem;
+  }
+  .tin-tuc button{
+    font-size: 1.5rem;
   }
   .footer {
     display: block;
@@ -307,17 +298,28 @@
   .tin-tuc__content{
     margin-left: 4.5rem;
   }
+  .tin-tuc button{
+    font-size: 1rem;
+  }
   .footer {
     display: block;
   }
   .sub-footer .footer__logo {
     margin-left: 2rem;
   }
+  .footer__logo img{
+    width: 240px;
+    height: 190px;
+    margin-left: 3rem;
+  }
   .sub-footer .about-lp {
     margin-top: 2rem;
   }
   .sub-footer .connect {
     margin-top: 2rem;
+  }
+  .register__logo{
+    margin-bottom: 1rem;
   }
   #powered {
     display: flex;
