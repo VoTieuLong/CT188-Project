@@ -691,20 +691,21 @@ img.displaySlide{
   justify-content: space-around;
   align-items: center;
   justify-items: center;
-  margin-top: 10px;
+  /* margin-top: 10px; */
   width: 100%;
 }
 .infor{
+  cursor: pointer;
   width: 100%;
   display: none;
-  /* flex: 0 0 33.33333%; */
+  overflow: hidden;
 }
 .infor.active{
   display: block;
 }
 .tin-tuc img {
   width: 100%;
-  height: 270px;
+  height: auto;
 }
 .tin-tuc button{
   position: absolute;
@@ -718,7 +719,12 @@ img.displaySlide{
   border: none;
   cursor: pointer;
 }
-
+.tin-tuc__content{
+  font-size: 16px;
+  color: #767676;
+  max-width: 100%;
+  overflow: hidden;
+}
 /* FOOTER */
 #footer {
   background-color: #fff;

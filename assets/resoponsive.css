@@ -96,18 +96,12 @@
   .tin-tuc img {
     width: 100%;
   }
-  /* .tin-tuc .info1{
-    margin-right: 3rem;
-  } */
-  .tin-tuc .info2 {
-    margin-top: 20px;
-  }
   #footer {
     display: block;
   }
-  #powered {
+  /* #powered {
     display: block;
-  }
+  } */
   #powered {
     display: flex;
     justify-content: center;
@@ -305,10 +299,13 @@
   .tin-tuc img{
     width: 70%;
   }
+  .tin-tuc{
+    overflow: hidden;
+  }
   .tin-tuc img,
   .tin-tuc__date,
-  .tin-tuc__content {
-    margin-left: 4rem;
+  .tin-tuc__content{
+    margin-left: 4.5rem;
   }
   .footer {
     display: block;
