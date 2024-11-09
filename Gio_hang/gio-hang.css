@@ -7,10 +7,14 @@ button,
 i {
   cursor: pointer;
 }
+
 .container {
   width: 1200px;
   max-width: 90vw;
-  margin: auto;
+  margin-top: 200px;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
   min-height: 400px;
 }
 table {
