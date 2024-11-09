@@ -13,7 +13,8 @@ function formatNumber(num) {
   parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
   return parts.join(".");
 }
-//fetch thông tin sản phẩm
+
+// Fetch product information
 let products = null;
 fetch("./assets/product.json")
   .then((response) => response.json())
@@ -23,15 +24,14 @@ fetch("./assets/product.json")
 
 let listCart = [];
 function checkCart() {
-  var cookieValue = document.cookie
-    .split(";")
-    .find((row) => row.startsWith("listCart="));
-  if (cookieValue) {
-    listCart = JSON.parse(cookieValue.split("=")[1]);
+  const storedCart = localStorage.getItem("listCart");
+  if (storedCart) {
+    listCart = JSON.parse(storedCart);
     addCartToHTML();
   }
 }
 checkCart();
+
 function addCart($idProduct) {
   let productCopy = JSON.parse(JSON.stringify(products));
   if (!listCart[$idProduct]) {
@@ -43,9 +43,7 @@ function addCart($idProduct) {
   } else {
     listCart[$idProduct].quantity++;
   }
-  let timeSave = "expires=Thu, 31 Dec 2025 23:59:59 UTC";
-  document.cookie =
-    "listCart=" + JSON.stringify(listCart) + ";" + timeSave + "; path=/";
+  localStorage.setItem("listCart", JSON.stringify(listCart));
   addCartToHTML();
 }
 
@@ -76,8 +74,7 @@ function addCartToHTML() {
           `;
         listCartHTML.appendChild(newCart);
         totalQuantity += product.quantity;
-        console.log(totalQuantity);
-        totalPrice = totalPrice + product.quantity * product.price;
+        totalPrice += product.quantity * product.price;
       }
     });
     totalHTML.innerText = totalQuantity;
@@ -85,6 +82,7 @@ function addCartToHTML() {
     totalQuantityHTML.innerText = totalQuantity;
   }
 }
+
 function changeQuantity(idProduct, type) {
   if (type == "+") {
     listCart[idProduct].quantity++;
@@ -94,10 +92,8 @@ function changeQuantity(idProduct, type) {
       delete listCart[idProduct];
     }
   }
-  //save new data in cookie
-  let timeSave = "expires=Thu, 31 Dec 2025 23:59:59 UTC";
-  document.cookie =
-    "listCart=" + JSON.stringify(listCart) + ";" + timeSave + "; path=/";
-  //reload list cart in HTML
+  // Save new data in local storage
+  localStorage.setItem("listCart", JSON.stringify(listCart));
+  // Reload list cart in HTML
   addCartToHTML();
 }
