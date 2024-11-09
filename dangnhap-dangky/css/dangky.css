@@ -136,7 +136,6 @@ cursor: pointer;
 }
 #header .header__search {
 display: flex;
-margin-right: -120px;
 padding-top: 2px;
 align-items: center;
 }
