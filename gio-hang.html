@@ -134,23 +134,45 @@
   </div>
     <!-- MAIN -->
     <div class="container">
-      <table class="tableProduct">
-        <thead class="tableHead">
-          <tr>
-            <th>Hình ảnh</th>
-            <th>Tên sản phẩm</th>
-            <th>Số lượng</th>
-            <th>Giá</th>
-            <th>Xóa</th>
-          </tr>
-        </thead>
-        <tbody class="listProduct">
-          <!-- Items will be populated here by JavaScript -->
-        </tbody>
-      </table>
-      <div class="totalPrice">
-        <p>Tổng số lượng: <span id="totalQuantity">0</span></p>
-        <p>Tổng giá trị: <span id="totalPrice">0 VNĐ</span></p>
+      <div class="productTable">
+        <table class="tableProduct">
+          <thead class="tableHead">
+            <tr>
+              <th>Hình ảnh</th>
+              <th>Tên sản phẩm</th>
+              <th>Số lượng</th>
+              <th>Giá</th>
+              <th>Xóa</th>
+            </tr>
+          </thead>
+          <tbody class="listProduct">
+            <!-- Items will be populated here by JavaScript -->
+          </tbody>
+        </table>
+      </div>
+      <div class="subCart">
+        <div id="coupon">
+          <h3>Nhập mã giảm giá</h3>
+          <div>
+            <input type="text" placeholder="Nhập mã giảm giá..." />
+            <button class="btn">Áp dụng</button>
+          </div>
+        </div>
+
+        <div id="subtotal">
+          <h3>Tổng cộng</h3>
+          <table>
+            <tr>
+              <td>Tổng số lượng</td>
+              <td id="totalQuantity">12</td>
+            </tr>
+            <tr>
+              <td>Tổng giá trị</td>
+              <td id="totalPrice">13,434,000VNĐ</td>
+            </tr>
+          </table>
+          <button>Thanh toán</button>
+        </div>
       </div>
     </div>
     <!-- FOOTER -->
