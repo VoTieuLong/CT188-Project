@@ -11,6 +11,7 @@ i {
   width: 1200px;
   max-width: 90vw;
   margin: auto;
+  min-height: 400px;
 }
 table {
   width: 100%;
@@ -39,7 +40,7 @@ td {
   text-align: center;
   align-items: center;
 }
-td button {
+td .btn {
   background-color: #209a88;
   border-radius: 3px;
   border: none;
@@ -52,4 +53,33 @@ td button {
 }
 .value {
   padding: 5px;
+}
+.emptyCart {
+  color: #767676;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  line-height: 25px;
+}
+.emptyCart * {
+  margin: 5px;
+}
+.emptyCart a {
+  margin: 0;
+  text-decoration: none;
+  color: #209a88;
+}
+.emptyCart a:hover {
+  color: #40916c;
+}
+.quantityButton {
+  height: 125px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.deleteButton {
+  border-style: none;
+  font-size: medium;
 }
