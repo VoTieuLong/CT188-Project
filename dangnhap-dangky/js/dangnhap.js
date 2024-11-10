@@ -40,7 +40,7 @@ formLogin.addEventListener("submit", function(e){
 ;        
     } else {
     //nếu ko thì báo chưa có tk và nhập lại dữ liệu
-        window.location.href = "../index.html"
+        window.location.href = "../../index.html"
 
     // lưu thông tin
     localStorage.setItem("userLogin", JSON.stringify(findUser));
