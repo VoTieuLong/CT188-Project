@@ -46,6 +46,7 @@ button {
   cursor: pointer;
 }
 .header__nav {
+  height: 900px;
   display: none;
   transition: all 0.3s ease;
   z-index: 1000;
