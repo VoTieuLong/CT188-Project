@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+button,
+i {
+  cursor: pointer;
+}
+
+.container {
+  width: 1200px;
+  max-width: 90vw;
+  margin-top: 200px;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 400px;
+}
+.tableProduct {
+  width: 100%;
+  border-collapse: collapse;
+}
+thead {
+  background-color: black;
+}
+th {
+  text-align: center;
+  padding: 15px;
+  color: #fff;
+  font-weight: bold;
+  font-size: large;
+}
+td {
+  padding: 10px;
+}
+tbody {
+  background-color: #f4f4f4;
+}
+tbody tr:nth-child(even) {
+  background-color: #e5e5e5;
+}
+td {
+  text-align: center;
+  align-items: center;
+}
+td .btn {
+  background-color: #209a88;
+  border-radius: 3px;
+  border: none;
+  color: white;
+  text-align: center;
+  padding: 2px;
+  width: 20px;
+  height: auto;
+  font-weight: bold;
+}
+.value {
+  padding: 5px;
+}
+.emptyCart {
+  color: #767676;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  line-height: 25px;
+}
+.emptyCart * {
+  margin: 5px;
+}
+.emptyCart a {
+  margin: 0;
+  text-decoration: none;
+  color: #209a88;
+}
+.emptyCart a:hover {
+  color: #40916c;
+}
+.quantityButton {
+  height: 125px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.deleteButton {
+  border-style: none;
+  font-size: medium;
+}
+.subCart {
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#coupon {
+  width: 50%;
+  margin-bottom: 30px;
+}
+#coupon input {
+  margin-top: 10px;
+  padding: 10px 20px;
+  outline: none;
+  width: 60%;
+  margin-right: 10px;
+  border: 1px solid #e2e9e1;
+}
+#coupon button,
+#subtotal button {
+  font-weight: bold;
+  background-color: #209a88;
+  border-radius: 3px;
+  border: none;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+#subtotal {
+  padding: 10px;
+  width: 50%;
+  margin-bottom: 30px;
+  border: 1px solid #e2e9e1;
+}
+#subtotal table {
+  margin-top: 10px;
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+#subtotal table td {
+  width: 50%;
+  border: 1px solid #e2e9e1;
+  padding: 10px;
+}
+#subtotal button {
+  float: right;
+}
+/* RESPONSIVE */
+.productTable {
+  overflow-x: auto;
+}
+@media (max-width: 768px) {
+  .subCart {
+    flex-direction: column;
+  }
+  #coupon {
+    width: 100%;
+  }
+  #subtotal {
+    width: 100%;
+  }
+}
