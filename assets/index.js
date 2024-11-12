@@ -79,4 +79,3 @@ function nextNewsSlide() {
     newsSlideIndex++;
     showNewsSlide(newsSlideIndex);
 }
-

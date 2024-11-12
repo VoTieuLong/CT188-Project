@@ -3,8 +3,12 @@
   .hide-on-mobile-tablet {
     display: none;
   }
-  
 }
+  .infor{
+    display: none;
+  }
+
+
 /* TABLET */
 @media only screen and (min-width: 740px) and (max-width: 1023px) {
   .hide-on-tablet {
@@ -86,6 +90,12 @@
   }
   .lady {
     display: none;
+  }
+  .infor{
+    display: none;
+  }
+  .tin-tuc{
+    overflow: hidden;
   }
   .tin-tuc img {
     width: 100%;
@@ -195,6 +205,15 @@
   .lady {
     display: none;
   }
+  .infor{
+    display: none;
+  }
+  .tin-tuc{
+    overflow: hidden;
+  }
+  .tin-tuc img{
+    width: 90%;
+  }
   .tin-tuc img,
   .tin-tuc__date,
   .tin-tuc__content {
@@ -293,7 +312,7 @@
     aspect-ratio: 1 / 1;
   }
   .tin-tuc img{
-    width: 70%;
+    width: 90%;
   }
   .tin-tuc{
     overflow: hidden;

@@ -724,14 +724,12 @@ img.displaySlide {
   justify-content: space-around;
   align-items: center;
   justify-items: center;
-  /* margin-top: 10px; */
   width: 100%;
 }
 .infor {
   cursor: pointer;
   width: 100%;
   display: none;
-  overflow: hidden;
 }
 .infor.active {
   display: block;
