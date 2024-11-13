@@ -1,8 +1,5 @@
 /* MOBILE & TABLET */
 @media only screen and (min-width: 1024px) {
-  .hide-on-mobile-tablet {
-    display: none;
-  }
 }
   .infor{
     display: none;
@@ -90,6 +87,8 @@
   }
   .lady {
     display: none;
+    width: 100%;
+    overflow: hidden;
   }
   .infor{
     display: none;
@@ -116,7 +115,7 @@
     margin-top: 9rem;
   }
 }
-/* MOBILE */
+/* TABLET */
 @media only screen and (max-width: 739px) {
   .hide-on-mobile {
     display: none;
@@ -320,13 +319,16 @@
   .tin-tuc img,
   .tin-tuc__date,
   .tin-tuc__content{
-    margin-left: 4.5rem;
+    margin-left: 1.5rem;
   }
   .tin-tuc button{
     font-size: 1rem;
   }
   .footer {
     display: block;
+  }
+  .infor{
+    display: none;
   }
   .sub-footer .footer__logo {
     margin-left: 2rem;
@@ -343,7 +345,7 @@
     margin-top: 2rem;
   }
   .register__logo{
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
   #powered {
     display: flex;
