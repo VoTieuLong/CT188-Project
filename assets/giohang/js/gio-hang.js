@@ -1,5 +1,6 @@
 //tải dữ liệu sản phẩm từ localStorage
 function loadCart() {
+  let totalHTML = document.querySelector(".totalQuantity");
   let listCart = JSON.parse(localStorage.getItem("listCart")) || [];
   listCart = listCart.filter((product) => product !== null);
   if (listCart.length === 0) {
@@ -42,6 +43,8 @@ function loadCart() {
     document.getElementById("totalQuantity").innerText = totalQuantity;
     document.getElementById("totalPrice").innerText =
       formatNumber(totalPrice) + " VNĐ";
+    totalHTML.innerText = totalQuantity;
+    localStorage.setItem("totalQuantity", totalQuantity);
   }
 }
 

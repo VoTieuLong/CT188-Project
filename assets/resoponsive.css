@@ -1,17 +1,16 @@
 /* MOBILE & TABLET */
 @media only screen and (min-width: 1024px) {
 }
-  .infor{
-    display: none;
-  }
-
+.infor {
+  display: none;
+}
 
 /* TABLET */
 @media only screen and (min-width: 740px) and (max-width: 1023px) {
   .hide-on-tablet {
     display: none;
   }
-  #header{
+  #header {
     width: 100%;
     max-width: 960px;
     height: 8%;
@@ -26,12 +25,12 @@
     height: 10%;
     padding-bottom: 2rem;
   }
-  .header-bar{
+  .header-bar {
     width: 100%;
     position: relative;
     background-color: #fff;
   }
-  .header__nav{
+  .header__nav {
     position: absolute;
     font-size: 16px;
     color: #767676;
@@ -39,7 +38,7 @@
     z-index: 1000;
     background-color: #fff;
   }
-  .header__nav-search{
+  .header__nav-search {
     margin-bottom: 50px;
   }
   .header-icon__bar {
@@ -56,10 +55,10 @@
     display: none;
   }
   .header__search {
-    text-align: center; 
-    width: 100%; 
+    text-align: center;
+    width: 100%;
     padding-left: 25rem;
-    overflow: hidden; 
+    overflow: hidden;
   }
   .header__seacrh .fa-bag-shopping {
     display: inline-block;
@@ -70,7 +69,7 @@
   #navigation {
     display: none;
   }
-  #content{
+  #content {
     width: 80%;
   }
   .item__img1 {
@@ -90,16 +89,16 @@
     width: 100%;
     overflow: hidden;
   }
-  .infor{
+  .infor {
     display: none;
   }
-  .tin-tuc{
+  .tin-tuc {
     overflow: hidden;
   }
   .tin-tuc img {
     width: 100%;
   }
-  .tin-tuc button{
+  .tin-tuc button {
     font-size: 1.5rem;
   }
   #footer {
@@ -120,12 +119,12 @@
   .hide-on-mobile {
     display: none;
   }
-  #header{
+  #header {
     width: 100%;
     max-width: 720px;
     height: 8%;
   }
-  #header-element{
+  #header-element {
     display: flex;
     align-items: center;
   }
@@ -138,12 +137,12 @@
     width: 30%;
     height: 50%;
   }
-  .header-bar{
+  .header-bar {
     width: 60%;
     position: relative;
     background-color: #fff;
   }
-  .header__nav{
+  .header__nav {
     position: absolute;
     font-size: 16px;
     color: #767676;
@@ -166,9 +165,9 @@
     display: none;
   }
   .header__search {
-    text-align: center; 
-    width: 100%; 
-    overflow: hidden; 
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
     margin-right: -120px;
   }
   .header__seacrh .fa-bag-shopping {
@@ -177,16 +176,16 @@
     margin: 0 auto;
   }
   #header .header__icon i,
-#header .header__search i {
-  margin-left: 20rem;
-}
-#header .totalQuantity{
-  width: 9%;
-}
+  #header .header__search i {
+    margin-left: 20rem;
+  }
+  #header .totalQuantity {
+    width: 9%;
+  }
   #navigation {
     display: none;
   }
-  #content{
+  #content {
     width: 100%;
   }
   .subcontent__item .item__img1 img {
@@ -204,13 +203,13 @@
   .lady {
     display: none;
   }
-  .infor{
+  .infor {
     display: none;
   }
-  .tin-tuc{
+  .tin-tuc {
     overflow: hidden;
   }
-  .tin-tuc img{
+  .tin-tuc img {
     width: 90%;
   }
   .tin-tuc img,
@@ -218,7 +217,7 @@
   .tin-tuc__content {
     margin-left: 9rem;
   }
-  .tin-tuc button{
+  .tin-tuc button {
     font-size: 1.5rem;
   }
   .footer {
@@ -242,13 +241,12 @@
     align-items: center;
     margin-top: 26rem;
   }
-  
 }
 @media only screen and (max-width: 550px) {
   .subcontent__item .item__img1 img {
     width: 100%;
   }
-  #header{
+  #header {
     width: 100%;
     max-width: 540px;
     height: 8%;
@@ -275,9 +273,9 @@
     display: none;
   }
   .header__search {
-    text-align: center; 
-    width: 100%; 
-    overflow: hidden; 
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
     margin-right: -120px;
   }
   .header__seacrh .fa-bag-shopping {
@@ -289,16 +287,16 @@
   #header .header__search i {
     margin-left: 10rem;
   }
-  #header .totalQuantity{
+  #header .totalQuantity {
     width: 9%;
   }
-  .header__nav{
+  .header__nav {
     width: 125%;
   }
   #navigation {
     display: none;
   }
-  #content{
+  #content {
     width: 100%;
   }
   .lady {
@@ -310,30 +308,30 @@
     max-width: 100%;
     aspect-ratio: 1 / 1;
   }
-  .tin-tuc img{
+  .tin-tuc img {
     width: 90%;
   }
-  .tin-tuc{
+  .tin-tuc {
     overflow: hidden;
   }
   .tin-tuc img,
   .tin-tuc__date,
-  .tin-tuc__content{
+  .tin-tuc__content {
     margin-left: 1.5rem;
   }
-  .tin-tuc button{
+  .tin-tuc button {
     font-size: 1rem;
   }
   .footer {
     display: block;
   }
-  .infor{
+  .infor {
     display: none;
   }
   .sub-footer .footer__logo {
     margin-left: 2rem;
   }
-  .footer__logo img{
+  .footer__logo img {
     width: 240px;
     height: 190px;
     margin-left: 3rem;
@@ -344,7 +342,7 @@
   .sub-footer .connect {
     margin-top: 2rem;
   }
-  .register__logo{
+  .register__logo {
     margin-bottom: 2rem;
   }
   #powered {
@@ -353,7 +351,7 @@
     align-items: center;
     margin-top: 27rem;
   }
-  .bonus{
+  .bonus {
     margin-left: 30%;
   }
 }

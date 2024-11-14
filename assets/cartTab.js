@@ -26,27 +26,42 @@ let listCart = [];
 function checkCart() {
   const storedCart = localStorage.getItem("listCart");
   if (storedCart) {
-    listCart = JSON.parse(storedCart);
+    listCart = JSON.parse(storedCart).filter((product) => product !== null);
     addCartToHTML();
   }
 }
 checkCart();
 
-function addCart($idProduct) {
-  let productCopy = JSON.parse(JSON.stringify(products));
-  if (!listCart[$idProduct]) {
-    let dataProduct = productCopy.filter(
-      (product) => product.id == $idProduct
-    )[0];
-    listCart[$idProduct] = dataProduct;
-    listCart[$idProduct].quantity = 1;
-  } else {
-    listCart[$idProduct].quantity++;
+function addCart(idProduct) {
+  if (!products) {
+    console.error("Products data chưa được tải!");
+    return;
   }
+
+  if (!listCart.find((item) => item && item.id === idProduct)) {
+    const dataProduct = products.find((product) => product.id === idProduct);
+    if (dataProduct) {
+      const productToAdd = { ...dataProduct, quantity: 1 };
+      listCart.push(productToAdd);
+    }
+  } else {
+    listCart = listCart.map((item) =>
+      item && item.id === idProduct
+        ? { ...item, quantity: item.quantity + 1 }
+        : item
+    );
+  }
+
   localStorage.setItem("listCart", JSON.stringify(listCart));
   addCartToHTML();
 }
-
+function updateTotalQuantity() {
+  let totalQuantity = listCart.reduce(
+    (acc, product) => acc + (product ? product.quantity : 0),
+    0
+  );
+  localStorage.setItem("totalQuantity", totalQuantity); // Lưu tổng số lượng vào localStorage
+}
 function addCartToHTML() {
   let listCartHTML = document.querySelector(".listCart");
   listCartHTML.innerHTML = "";
@@ -55,7 +70,8 @@ function addCartToHTML() {
   let totalQuantityHTML = document.querySelector(".total_Quantity");
   let totalQuantity = 0;
   let totalPrice = 0;
-  if (listCart) {
+
+  if (listCart && listCart.length > 0) {
     listCart.forEach((product) => {
       if (product) {
         let newCart = document.createElement("div");
@@ -77,23 +93,31 @@ function addCartToHTML() {
         totalPrice += product.quantity * product.price;
       }
     });
-    totalHTML.innerText = totalQuantity;
-    totalPriceHTML.innerText = formatNumber(totalPrice) + " VNĐ";
-    totalQuantityHTML.innerText = totalQuantity;
   }
+
+  totalHTML.innerText = totalQuantity;
+  totalPriceHTML.innerText = formatNumber(totalPrice) + " VNĐ";
+  totalQuantityHTML.innerText = totalQuantity;
+  updateTotalQuantity();
 }
 
 function changeQuantity(idProduct, type) {
-  if (type == "+") {
-    listCart[idProduct].quantity++;
-  } else {
-    listCart[idProduct].quantity--;
-    if (listCart[idProduct].quantity <= 0) {
-      delete listCart[idProduct];
-    }
-  }
-  // Save new data in local storage
+  listCart = listCart
+    .map((product) => {
+      if (product && product.id === idProduct) {
+        if (type === "+") {
+          product.quantity++;
+        } else if (type === "-" && product.quantity > 1) {
+          product.quantity--;
+        } else if (type === "-" && product.quantity === 1) {
+          return null; // Đánh dấu sản phẩm để xóa
+        }
+      }
+      return product;
+    })
+    .filter((product) => product !== null); // Loại bỏ sản phẩm bị null
+
   localStorage.setItem("listCart", JSON.stringify(listCart));
-  // Reload list cart in HTML
   addCartToHTML();
+  updateTotalQuantity();
 }
