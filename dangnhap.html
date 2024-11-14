@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ĐĂNG NHẬP</title>
+        <link rel="stylesheet" href="./assets/grid.css">
+        <link rel="stylesheet" href="./assets/resoponsive.css">
+        <link rel="stylesheet" href="./assets/dangnhap-dangky/css/dangnhap.css">
+        <link rel="stylesheet" href="./assets/dangnhap-dangky/css/responsive.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+    </head>
+    <body class="page">
+        <div id="header">   
+            <!-- HEADER -->
+           <div id="header-element">
+               <div class="header__icon">
+                   <i class="fa-brands fa-facebook"></i>
+                   <i class="fa-brands fa-instagram"></i>
+                   <i class="fa-brands fa-youtube"></i>
+                   <i class="fa-solid fa-location-dot"></i>
+               </div>
+               <div class="header-bar">
+                    <div class="header-icon__bar">
+                        <i class="fa-solid fa-bars" onclick="toggleNav()"></i>
+                    </div>
+                    <div class="header__nav" id="headerNav">
+                        <div class="header__nav-search">
+                            <input class="fa-search" type="text" placeholder="Tìm sản phẩm...">
+                        </div>
+                        <div class="header__nav-listItem">
+                            <ul class="header__nav-item">
+                                <li>Trang chủ</li>
+                                <li>Trang Sức Vàng</li>
+                                <li>Trang Sức Cưới</li>
+                                <li>Trang Sức Cao Cấp</li>
+                                <li>Kim Cương</li>
+                                <li>Bộ Sưu Tập</li>
+                                <li>Tin Tức</li>
+                                <li>Liên Hệ</li>
+                            </ul>
+                        </div>
+                        <div class="header__about-lp">
+                            <a href="./dangnhap.html"><p> <i class="fa-regular fa-user"></i> Đăng Ký / Đăng Nhập </p></a>
+                            <p> <i class="fa-solid fa-location-dot"></i> Hệ thống Showrooms</p>
+                            <p> <i class="fa-solid fa-phone"></i> 1900 636 526</p>
+                            <p> <i class="fa-regular fa-envelope"></i> chamsoc@locphuc.com.vn</p>
+                        </div>
+                        <div class="header__icon2">
+                            <i class="fa-brands fa-facebook"></i> 
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-youtube"></i>
+                        </div>
+                    </div>
+               </div>
+               <div class="header-logo ">
+                   <a href="./index.html"><img src="./assets/images/logo/loc-phuc-logo.jpg" alt=""></a>
+               </div>
+               <div class="header__search">
+                   <i class="fa-solid fa-magnifying-glass"></i>
+                   <input class="fa-search" style="padding-right: 10px;" type="text" placeholder="Tìm sản phẩm...">
+                   <a href="./dangnhap.html"><i class="fa-regular fa-user"></i>  </a>
+                   <div class="header__icon-cart">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <div class="totalQuantity">1</div>
+                   </div>
+               </div>
+           </div>
+            <!-- NAVIGATION -->
+            <div id="navigation">
+                <ul class="nav">
+                        <li><a class="item-trang-chu" href="./index.html">TRANG CHỦ</a></li>
+                        <li class="list__item items"><a href="">TRANG SỨC <i class="fa-solid fa-chevron-down"></i></a>
+                                <ul class="subnav__menu">
+                                    <h6 class="item1"><a href="">TRANG SỨC KIM CƯƠNG</a>
+                                        <ul>
+                                            <li>Nhẫn kim cương</li>
+                                            <li>Bông tai kim cương</li>
+                                            <li>Dây chuyền kim cương</li>
+                                            <li>Vòng & Lắc kim cương</li>
+                                            <li>Trang Sức Cưới</li>      
+                                        </ul>
+                                    </h6>
+                                    <h6 class="item2"><a href="">TRANG SỨC CZ</a>
+                                        <ul>
+                                            <li>Nhẫn CZ</li>
+                                            <li>Bông tai CZ</li>
+                                            <li>Dây chuyền CZ</li>
+                                            <li>Vòng & Lắc CZ</li>
+                                            <li>Vòng Pan-Charm</li>
+                                        </ul>
+                                    </h6>
+                                    <h6 class="item3"><a href="">TRANG SỨC ĐÁ MÀU</a>
+                                        <ul>
+                                            <li>Nhẫn Đá Màu</li>
+                                            <li>Bông tai Đá Màu</li>
+                                            <li>Dây chuyền Đá Màu</li>
+                                            <li>Vòng & Lắc Đá Màu</li>
+                                            <li>Vòng Pan-Charm Đá Màu</li>
+                                        </ul>
+                                    </h6>
+                                    <h6 class="item4"><a href="">TRANG SỨC NGỌC TRAI</a>
+                                        <ul>
+                                            <li>Nhẫn Ngọc Trai</li>
+                                            <li>Bông tai Ngọc Trai</li>
+                                            <li>Dây chuyền Ngọc Trai</li>
+                                            <li>Vòng & Lắc Ngọc Trai</li>
+                                            <li>Phụ Kiện Ngọc Trai</li>
+                                        </ul>
+                                    </h6>
+                                </ul>
+                            </li>
+                            <li class="items"><a class="list__item" href="">TRANG SỨC CƯỚI <i class="fa-solid fa-chevron-down"></i></a>
+                                <ul class="subnav">
+                                    <li><a href="">Nhẫn Cưới</a></li>
+                                    <li><a href="">Nhẫn Cầu Hôn</a></li>
+                                    <li><a href="">Kiềng Cưới</a></li>
+                                </ul>
+                            </li>
+                            <li class="items"><a class="list__item" href="">TRANG SỨC CAO CẤP <i class="fa-solid fa-chevron-down"></i></a>
+                                <ul class="subnav">
+                                    <li><a href="">Nhẫn</a></li>
+                                    <li><a href="">Bông Tai</a></li>
+                                    <li><a href="">Dây Chuyền</a></li>
+                                    <li><a href="">Vòng Lắc</a></li>
+                                </ul> 
+                            </li>
+                            <li><a href="">KIM CƯƠNG</a></li>
+                            <li><a href="">BỘ SƯU TẬP</a></li>
+                            <li><a href="">TIN TỨC</a></li>
+                            <li><a href="">LIÊN HỆ</a></li>
+                    </ul>
+                </div>
+        </div>
+        <main class="page-container"> 
+            
+                <div>
+                    <form id="formLogin" class="login" action="" > 
+                        <div class="login__box" >
+                            <h1 class="login__box-title" >ĐĂNG NHẬP</h1> 
+                                
+                            <div class="form-group">
+                                <p class="login__box-info">Email đăng nhập </p>
+                                <input id="email" class="login-text" type="text" name="login" placeholder="Email đăng nhập..."> 
+                            </div>
+                               
+                            <div class="form-group">
+                                <p class="login__box-info login__box-psw">Mật khẩu</p> 
+                                <input id="psw" class="login-text psw-text" type="password" name="psw" placeholder="Mật khẩu...">
+                                    <img id="view-eye" class=" eye-password" onclick="pswVisibility()" src="./assets/dangnhap-dangky/images/view.png" alt="" >
+                                </input> 
+                            </div>
+                            
+                            <div id="alertError"class="alert alert-danger" role="alert">
+                                Tên đăng nhập hoặc mật khẩu không đúng
+                            </div>
+                          
+                            <br>
+                            <div class="login__note "> 
+                                <input class="login__note-checkbox "type="checkbox" name="remember">
+                                <p class="login__note-text  ">Nhớ đăng nhập</p>
+                                <a class="login__note-forgot-psw" href="">Quên mật khẩu?</a>  
+                            </div>
+                                
+                            <br>
+                                
+                            <button id="btn" class="login__box-btn" type="submit" value="Đăng nhập">Đăng nhập </button>
+                            <p class="login__box-sign-in">Chưa có tài khoản? <a href="./dangky.html" class="signin-link">Đăng ký ngay</a></p> <!--flex item I.2.8-->
+                                
+                            <p class="login__box-or">Hoặc</p>
+                            <div class="login__note"> 
+                                <a class="login__box-google" href=""> 
+                                    <i class="fa-brands fa-google"></i> Đăng nhập bằng Google
+                                </a>
+                                <a class="login__box-facebook" href=""> 
+                                    <i class="fa-brands fa-facebook"></i>   Đăng nhập bằng Facebook
+                                </a>
+                            </div>
+                                
+                        </div>
+                    </form>
+                </div>
+    
+                <div class="swap__image">
+                    <img class="swap__image1" src="./assets/dangnhap-dangky/images/banner/illustrate.jpg" alt="" > 
+                    <img class="swap__image2" src="./assets/dangnhap-dangky/images/banner/illustrate4.jpg" alt="" >  
+                </div>                   
+            
+        </main> <footer id="footer">
+            <div class="grid wide">
+                 <div id="footer">
+                     <div class="sub-footer row">
+                         <div class="footer__logo col l-3 m-6 c-12 ">
+                             <img src="./assets/images/logo/Logo-loc-phuc-footer.png" alt="">
+                         </div>
+                         <div class="footer__addr col l-3 m-6 c-12">
+                             <h4 class="add">LIÊN HỆ</h4>
+                             <p> <i class="fa-solid fa-house"></i> 532-534 Cộng Hòa, Phường 13, Quận Tân Bình, TP. Hồ Chí Minh</p>
+                             <p> <i class="fa-regular fa-envelope"></i> chamsoc@locphuc.com.vn</p>
+                             <p> <i class="fa-solid fa-phone"></i> 1900636526 - (028) 62 818 818</p>
+                             <p> <i class="fa-solid fa-location-dot"></i> Hệ thống Showrooms</p>
+                         </div>
+                         
+                         <div class="about-lp col l-3 m-6 c-12">
+                             <h4 class="add">Lộc Phúc Fine Jewelry</h4>
+                             <div class="about-lp__m">
+                                 <div>
+                                     <p>Giới Thiệu</p>
+                                     <p>Tuyển Dụng</p>
+                                     <p>Liên Hệ</p>
+                                     <p>FAQ</p>
+                                     <p>Chế Độ Bảo Hành</p>
+                                 </div>
+                                 <div>
+                                     <p>Chính Sách Bảo Mật</p>
+                                     <p>Điều Khoản Sử Dụng</p>
+                                     <p>Chính Sách Thu Đổi</p>
+                                     <p>Hướng Dẫn Mua Hàng</p>
+                                     <p>Hướng Dẫn Đo Size</p>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="connect col l-3 m-6 c-12">
+                             <div class="add">
+                                 <h4>Kết nối với chúng tôi</h4>
+                             </div>
+                             <div class="connect-icon ">
+                                 <div class="add__icon1">
+                                     <i class="fa-brands fa-facebook"></i> 
+                                 </div>
+                                 <div class="add__icon2">
+                                     <i class="fa-brands fa-instagram"></i>
+                                 </div>
+                                 <div class="add__icon3">
+                                     <i class="fa-brands fa-youtube"></i>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                     <p style="margin-left: 100px;margin-top: 20px;">Đăng ký nhận bản tin</p>
+                     <div class="register">         
+                         <input type="text" placeholder="Enter your email address"> 
+                         
+                      </div>
+                      <div class="register__logo">
+                        <img class="register__logo" src="./assets/images/logo/logoSaleNoti.png" alt="">
+                    </div>
+                 </div>
+            </div>
+            <div id="powered">
+                <p>Powered By </p> <h5> Lộc Phúc Fine Jewelry </h5> <p> © 2023</p>
+            </div>
+          </footer>
+        <script src="./assets/gio-hang-app.js"></script>
+        <script src="./assets/dangnhap-dangky/js/dangnhap.js"></script>
+        <script src="./assets/index.js"></script>
+    </body>
+</html>
