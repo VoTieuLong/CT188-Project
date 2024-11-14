@@ -12,11 +12,11 @@ function pswVisibility(){
     var x = document.getElementById("psw");
     if(x.type==="password"){
         x.type = "text";
-        viewEye.src = "../images/view.png";
+        viewEye.src = "./assets/dangnhap-dangky/images/view.png";
 
     } else {
         x.type = "password";
-        viewEye.src = "../images/hide.png";
+        viewEye.src = "./assets/dangnhap-dangky/images/hide.png";
     }
 }
 formLogin.addEventListener("submit", function(e){
@@ -40,7 +40,7 @@ formLogin.addEventListener("submit", function(e){
 ;        
     } else {
     //nếu ko thì báo chưa có tk và nhập lại dữ liệu
-        window.location.href = "../../index.html"
+        window.location.href = "./index.html"
 
     // lưu thông tin
     localStorage.setItem("userLogin", JSON.stringify(findUser));

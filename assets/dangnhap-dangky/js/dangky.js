@@ -40,11 +40,11 @@ function pswVisibility(inputId, eyeIconId){
 
     if(pswInput.type==="password"){
         pswInput.type = "text";
-        eyeIcon.src = "../images/view.png";
+        eyeIcon.src = "./assets/dangnhap-dangky/images/view.png";
 
     } else {
         pswInput.type = "password";
-        eyeIcon.src = "../images/hide.png";
+        eyeIcon.src = "./assets/dangnhap-dangky/images/hide.png";
     }
 }
 
