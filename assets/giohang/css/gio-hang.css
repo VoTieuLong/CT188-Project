@@ -9,9 +9,12 @@ i {
 }
 
 .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 1200px;
   max-width: 90vw;
-  margin-top: 200px;
+  margin-top: 150px;
   margin-bottom: auto;
   margin-left: auto;
   margin-right: auto;
@@ -33,16 +36,14 @@ th {
 }
 td {
   padding: 10px;
+  text-align: center;
+  align-items: center;
 }
 tbody {
   background-color: #f4f4f4;
 }
 tbody tr:nth-child(even) {
   background-color: #e5e5e5;
-}
-td {
-  text-align: center;
-  align-items: center;
 }
 td .btn {
   background-color: #209a88;
@@ -82,6 +83,9 @@ td .btn {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.value {
+  margin: auto 3px;
 }
 .deleteButton {
   border-style: none;
