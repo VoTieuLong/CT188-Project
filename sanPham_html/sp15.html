@@ -59,10 +59,12 @@
                <i class="fa-solid fa-magnifying-glass"></i>
                <input class="fa-search" style="padding-right: 10px;" type="text" placeholder="Tìm sản phẩm...">
                <a href="../dangnhap.html"><i class="fa-regular fa-user"></i>  </a>
-               <div class="header__icon-cart">
-                    <i class="fa-solid fa-bag-shopping"></i>
-                    <div class="totalQuantity">1</div>
-               </div>
+               <a href="../gio-hang.html">
+                <div class="header__icon-cart">
+                  <i class="fa-solid fa-bag-shopping"></i>
+                  <div class="totalQuantity">0</div>
+                </div>
+              </a>
            </div>
        </div>
        <!-- NAVIGATION -->
@@ -278,8 +280,15 @@
    <div id="powered">
        <p>Powered By </p> <h5> Lộc Phúc Fine Jewelry </h5> <p> © 2023</p>
    </div>
-   <script src="../assets/Gio_hang/assets/gio-hang-app.js"></script>
-   <script src="../assets/Gio_hang/app.js"></script>
-   <script src="../assets/Gio_hang/assets/index.js"></script>   
+   <script src="../assets/giohang/js/gio-hang.js"></script>
+   <script src="../assets/index.js"></script> 
+   <script>
+    function displayCartQuantity() {
+    let totalQuantity = localStorage.getItem("totalQuantity") || 0;
+    let totalQuantityHTML = document.querySelector(".totalQuantity");
+    totalQuantityHTML.innerText = totalQuantity;
+    }
+    window.onload = displayCartQuantity;
+   </script>   
 </body>
 </html>

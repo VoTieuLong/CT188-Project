@@ -87,4 +87,5 @@ function removeItem(index) {
 }
 
 //Khởi tạo giỏ hành khi trang web được tải
+
 window.onload = loadCart;
